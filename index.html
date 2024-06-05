@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./home.css">
     <title>Theme Park</title>
 </head>
 <body>
@@ -20,50 +21,60 @@
                 </div>
             </div>
         </nav>
-        <!-- Sub Nav -->
-        <ul class="w-full max-w-5xl mx-auto border border-t-0 border-slate-500 grid grid-cols-6 divide-x divide-slate-300">
-            <li class="hover:bg-slate-200 transition ease-in-out">
-                <a href="./pages/tickets/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                    <i data-lucide="tag"></i>
-                    <span>Tickets</span>
-                </a>
-            </li>
-            <li class="hover:bg-slate-200 transition ease-in-out">
-                <a href="./pages/attractions/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                    <i data-lucide="roller-coaster"></i>
-                    <span>Attractions</span>
-                </a>
-            </li>
-            <li class="hover:bg-slate-200 transition ease-in-out">
-                <a href="./pages/accommodation/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                    <i data-lucide="bed-double"></i>
-                    <span>Places to Stay</span>
-                </a>
-            </li>
-            <li class="hover:bg-slate-200 transition ease-in-out">
-                <a href="./pages/shop/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                    <i data-lucide="shopping-bag"></i>
-                    <span>Shop</span>
-                </a>
-            </li>
-            <li class="hover:bg-slate-200 transition ease-in-out">
-                <a href="./pages/cart/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                    <i data-lucide="shopping-cart"></i>
-                    <span>Cart</span>
-                </a>
-            </li>
-        </ul>
-        <div class="background-img">
-            <img src="/assets/images/HomePageBackground.jpg" alt="background images">
+            <!-- Sub Nav -->
+        <nav class="subnav">
+            <ul class="w-full max-w-5xl mx-auto border border-t-0 border-slate-500 grid grid-cols-6 divide-x divide-slate-300 subnav">
+                <li class="hover:bg-slate-200 transition ease-in-out">
+                    <a href="./pages/tickets/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
+                        <i data-lucide="tag"></i>
+                        <span>Tickets</span>
+                    </a>
+                </li>
+                <li class="hover:bg-slate-200 transition ease-in-out">
+                    <a href="./pages/attractions/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
+                        <i data-lucide="roller-coaster"></i>
+                        <span>Attractions</span>
+                    </a>
+                </li>
+                <li class="hover:bg-slate-200 transition ease-in-out">
+                    <a href="./pages/accommodation/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
+                        <i data-lucide="bed-double"></i>
+                        <span>Places to Stay</span>
+                    </a>
+                </li>
+                <li class="hover:bg-slate-200 transition ease-in-out">
+                    <a href="./pages/shop/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
+                        <i data-lucide="shopping-bag"></i>
+                        <span>Shop</span>
+                    </a>
+                </li>
+                <li class="hover:bg-slate-200 transition ease-in-out">
+                    <a href="./pages/cart/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
+                        <i data-lucide="shopping-cart"></i>
+                        <span>Cart</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="relative h-screen">
+            <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center" style="background-image: url('./assets/images/HomePageBackground2.jpeg');"><!--<img src="./assets/images/HomePageBackground2.jpeg" alt="background image"> --></div>
         </div>
     </header>
     <main class="p-4">
-        
-        <!-- Your content goes here -->
-        <div class="py-16 h-96 grid place-items-center">
-            <p>Your content goes here</p>
-        </div>
-        
+        <h2 class="WhatsNewTitle" style="font-size: 3em; margin-left: 7vw; margin-top: 2vh;">What's New</h2>
+        <section class="whatsNew">
+            <span class="Carnival">
+                <img src="./assets/images/CarnivalBanner.jpg" alt="Carnival Banner" class="CarnivalBanner">
+                <article class="carnival-description">
+                    <h3 class="carnival-title">Welcome</h3>
+                    <p class="carnival-text"></p>
+                </article>
+            </span>
+        </section>
+
+
+
+
     </main>
     <footer class="p-5 bg-slate-500 text-white text-center">
         <div>&copy; 2024 Theme Park. All rights reserved.</div>
