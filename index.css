@@ -706,3 +706,19 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
+
+nav {
+  overflow: hidden;
+}
+
+.background-img {
+  height: (100vh - 50px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
