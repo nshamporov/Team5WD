@@ -1,4 +1,89 @@
+main {
+
+}
+
+.WhatsNewTitle {
+    font-size: 3em; 
+    margin-left: 15vw;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+.whatsNew {
+    align-items: center; 
+    justify-content: center;
+}
+
+.Carnival {
+    display: flex;
+    margin-left: 9vw;
+}
+
 .CarnivalBanner{
+    border: 1px solid black; 
+    width: 100%;
+    max-width: 40vw;
+    height: 100%;
+    max-height: 50vh;
+}
+
+.carnival-description {
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 2vw;
+}
+
+.carnival-title {
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.carnival-text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.buy-tickets {
+    background-color: rgb(60, 107, 236);
+    color: aliceblue;
+    padding: 1rem;
+    border-radius: 1em;
+}
+
+.WaterPark {
+    display: flex;
+    margin-left: 9vw;
+}
+
+.WaterPark-description {
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-right: 2vw;
+}
+
+.WaterPark-title {
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.WaterPark-text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.WaterParkBanner {
     border: 1px solid black; 
     width: 100%;
     max-width: 40vw;
