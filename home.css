@@ -21,7 +21,7 @@ html,
 }
 
 h1,
-h2,
+h2, 
 h3,
 h4,
 h5,
@@ -36,7 +36,7 @@ body {
 }
 
 .header {
-
+    
 }
 
 .topnav {
@@ -62,20 +62,29 @@ body {
     padding: 1.5em;
 }
 
-/* .subnav {
-
-} */
+.subnav {
+    background-color: transparent;
+}
 
 .subnav ul {
     width: 100%;
     max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #64748b;
+    border-bottom: 0.15em solid rgb(60, 107, 236);
     border-top: 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     list-style-type: none;
+    background-color: transparent;
+}
+
+.subnav li{
+    border-left: 0.15em solid rgb(60, 107, 236);
+}
+
+.subnav li:nth-last-child(1){
+    border-right: 0.15em solid rgb(60, 107, 236);
 }
 
 .subnav li :hover{
@@ -94,36 +103,36 @@ body {
     justify-content: center;
     text-decoration: none;
     color: #000;
+    background-color: white;
 }
 
-.background-image {
+.background-container {
     position: relative;
     height: 100vh;
 }
 
-
-
-.background-image img{
+.background-image img {
     position: absolute; 
     top: 0; 
     left: 0; 
     width: 100%;
-    height: 100%; 
-    background-size: cover; 
-    background-position: center; 
+    height: 100%;  
 }
 
-/* main {
+
+
+
+
+main {
     
-} */
+}
 
 
-                                        /* Whats new section */
+
 
 .whatsNew {
     align-items: center; 
     justify-content: center;
-    /* margin-bottom: 20vh; */
     border-bottom: 0.5em solid rgb(60, 107, 236);
     padding-bottom: 23vh;
 }
@@ -133,10 +142,16 @@ body {
     margin-left: 15vw;
     margin-top: 5vh;
     margin-bottom: 3vh;
+    background: linear-gradient(to right, rgb(144, 0, 255), rgb(144, 0, 255), rgb(0, 200, 255), rgb(0, 200, 255), rgb(25, 0, 255), rgb(25, 0, 255));
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
 }
 
 
-                            /* Carnival span */
+
+
 .Carnival {
     display: flex;
     margin-left: 9vw;
@@ -177,11 +192,18 @@ body {
     color: aliceblue;
     padding: 1rem;
     border-radius: 1em;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.buy-tickets:hover {
+    background-color: rgb(35, 65, 148);
+    color: #bbc3c3;
 }
 
 
 
-                            /* Water park span */
+
 .WaterPark {
     display: flex;
     margin-left: 9vw;
@@ -216,11 +238,12 @@ body {
     max-width: 40vw;
     height: 100%;
     max-height: 50vh;
+    min-width: 40vw;
 }
 
 
 
-                                /* Promotions Section */
+
 .promotions {
     align-items: center; 
     justify-content: center;
@@ -232,6 +255,9 @@ body {
     font-size: 3em; 
     margin-left: 15vw;
     margin-bottom: 3vh;
+    background: linear-gradient(to right,rgb(144, 0, 255), rgb(0, 200, 255), rgb(0, 200, 255), rgb(25, 0, 255));
+    background-clip: text;
+    color: transparent;
 }
 
 .ImageAndText {
@@ -275,7 +301,16 @@ body {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-radius: 1em 0em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
+
+.see-more:hover {
+    background-color: rgb(35, 65, 148);
+    color: #bbc3c3;
+}
+
 
 .bottom-images {
     display: flex;
@@ -286,7 +321,7 @@ body {
     width: 100%;
     max-width: 30vw;
     height: 100%;
-    max-height: 42.3vh;
+    max-height: 40.5vh;
     border: 1px solid black; 
 }
 
@@ -298,11 +333,6 @@ body {
     margin-right: 4vw;
     border: 1px solid black; 
 }
-
-
-
-
-
 
 
 
