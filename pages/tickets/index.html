@@ -20,33 +20,33 @@
         </nav>
         <!-- Sub Nav -->
         <nav class="subnav">
-            <ul class="ULsubnav">
-                <li class="LIsubnav">
-                    <a href="./pages/tickets/index.html" class="subnavA">
+            <ul>
+                <li>
+                    <a href="#" id="current-page">
                         <i data-lucide="tag"></i>
                         <span>Tickets</span>
                     </a>
                 </li>
-                <li class="LIsubnav">
-                    <a href="./pages/attractions/index.html" class="subnavA">
+                <li>
+                    <a href="./pages/attractions/index.html">
                         <i data-lucide="roller-coaster"></i>
                         <span>Attractions</span>
                     </a>
                 </li>
-                <li class="LIsubnav">
-                    <a href="./pages/accommodation/index.html" class="subnavA">
+                <li>
+                    <a href="./pages/accommodation/index.html">
                         <i data-lucide="bed-double"></i>
                         <span>Places to Stay</span>
                     </a>
                 </li>
-                <li class="LIsubnav">
-                    <a href="./pages/shop/index.html" class="subnavA">
+                <li>
+                    <a href="./pages/shop/index.html">
                         <i data-lucide="shopping-bag"></i>
                         <span>Shop</span>
                     </a>
                 </li>
-                <li class="LIsubnav">
-                    <a href="./pages/cart/index.html" class="subnavA">
+                <li>
+                    <a href="./pages/cart/index.html">
                         <i data-lucide="shopping-cart"></i>
                         <span>Cart</span>
                     </a>
@@ -57,11 +57,56 @@
             <div class="background-image"><img src="../../assets/images/HomePageBackground.jpg" alt="background image"></div>
         </div>
     </header>
-    <main class="p-4">
-        <!-- Your content goes here -->
-        <div class="py-16 h-96 grid place-items-center">
-            <p>Tickets Page</p>
-        </div>
+    <main>  
+        <h2 class="SpecialDeal-title">Special Deal</h2>
+        <section class="special-deal"> 
+            <article>
+                <h3>🎢 Early Bird Special: Exclusive Discount and Bonus! 🌅</h3><br>
+                <p>Get a head start on the fun with our Early Bird Special at Our Theme Park! Arrive early and enjoy extra perks along with a discount on your admission.</p>
+                <br><h4>Deal Details:</h4>
+                <ul>
+                    <li>Bird Discount: Arrive up to 2 hours before park opening and receive 30% off your admission ticket.</li>
+                    <li>Exclusive Park Entry: Be among the first to enter the park and start enjoying the rides and attractions before everyone else.</li>
+                    <li>Free Souvenir Photo: Capture a special moment with a complimentary souvenir photo at a designated photo spot.</li>
+                    <li>Exclusive Ride Access: Enjoy early access to select rides before the park opens to the general public.</li>
+                </ul>
+                <br><h4>How to Redeem:</h4>
+                <ol>
+                    <li>Select your preferred date and ticket type.</li>
+                    <li>Choose the Early Bird Special option during checkout to apply the discount.</li>
+                    <li>Arrive at the park up to 2 hours before opening to enjoy your exclusive benefits.</li>
+                </ol>
+                <p><br>Don't miss this opportunity to beat the crowds and maximize your theme park experience! Grab your tickets now and get ready for a day of adventure and excitement.<br><br>
+                <em>Terms and Conditions apply. Early Bird Special available for a limited time. Discount applies automatically at checkout. Free souvenir photo subject to availability. Exclusive ride access based on ride availability.</em></p>
+            </article>
+            <img src="../../assets/images/EarlyBird.jpg">
+        </section>
+       <section class="ticket-nav">
+            <nav>
+                <ul>
+                    <li style="background-image: url('../../assets/images/anual-pass.png');">
+                        <a href="">
+                            <span>Anual Passes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Day Ticket Deals</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Food Promotions</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>Wildlife Encounter</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </main>
     <footer>
         <section class="quickLinks">
@@ -108,7 +153,7 @@
     </footer>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-      lucide.createIcons();
+        lucide.createIcons();
     </script>
 </body>
 </html>
