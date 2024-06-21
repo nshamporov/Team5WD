@@ -19,7 +19,7 @@
                 </div>
         </nav>
         <!-- Sub Nav -->
-        <nav class="subnav">
+        <nav class="subnav" style="background-image: url('../../assets/images/HomePageBackground2.jpeg');">
             <ul>
                 <li>
                     <a href="#" id="current-page">
@@ -28,34 +28,31 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./pages/attractions/index.html">
+                    <a href="../attractions/index.html">
                         <i data-lucide="roller-coaster"></i>
-                        <span>Attractions</span>
+                        <span>Rides & Attractions</span>
                     </a>
                 </li>
                 <li>
-                    <a href="./pages/accommodation/index.html">
+                    <a href="../accommodation/index.html">
                         <i data-lucide="bed-double"></i>
                         <span>Places to Stay</span>
                     </a>
                 </li>
                 <li>
-                    <a href="./pages/shop/index.html">
+                    <a href="../shop/index.html">
                         <i data-lucide="shopping-bag"></i>
                         <span>Shop</span>
                     </a>
                 </li>
                 <li>
-                    <a href="./pages/cart/index.html">
+                    <a href="../cart/index.html">
                         <i data-lucide="shopping-cart"></i>
                         <span>Cart</span>
                     </a>
                 </li>
             </ul>
         </nav>
-        <div class="background-container">
-            <div class="background-image"><img src="../../assets/images/HomePageBackground.jpg" alt="background image"></div>
-        </div>
     </header>
     <main>  
         <h2 class="SpecialDeal-title">Special Deal</h2>
@@ -83,17 +80,15 @@
         </section>
         <nav class="ticket-nav">
             <ul>
-                <li style="background-image: url('../../assets/images/annual-pass-banner1.png');"><a href=""></a></li>
-                <li style="background-image: url('../../assets/images/single-daily-ticket.png');"><a href=""></a></li>
-                <li style="background-image:url('../../assets/images/food-promotions-banner.jpg');"><a href=""></a></li>
-                <li style="background-image:url('../../assets/images/wildlife-encounter-banner.jpg')">
-                    <a href="">
-                        <span>Wildlife Encounter</span>
-                    </a>
+                <a href="#AnnualPasses"><li style="background-image: url('../../assets/images/annual-pass-banner1.png');"></li></a>
+                <a href="#DayTicketDeals"><li style="background-image: url('../../assets/images/single-daily-ticket.png');"></li></a>
+                <a href="#FoodPromotions"><li style="background-image:url('../../assets/images/food-promotions-banner.jpg');"></li></a>
+                <a href="#WildlifeEncounter"><li style="background-image:url('../../assets/images/wildlife-encounter-banner.jpg')"><span>Wildlife Encounter</span></li></a>
                 </li>
             </ul>
         </nav>
-        <h2 class="Annualpasses-title">Our Annual Passes</h2>
+        <hr class="TicketNav-AnnualPasses">
+        <h2 class="Annualpasses-title" id="AnnualPasses">Our Annual Passes</h2>
         <section class="annual-passes">
             <p class="passes-description">Discover our Annual Pass options tailored to fit every preference and budget. From essential benefits with our Saver Pass to enhanced perks with our Normal Pass, and exclusive experiences with our Premium Pass, there's an option for everyone to enjoy unlimited visits, special events, and more throughout the year.</p>
             <ul class="passes">
@@ -108,7 +103,7 @@
                             <li>Free or Discounted Parking</li>
                         </ul>
                     </article>
-                    <button class="buy-now">Buy Now</button>
+                    <button class="buy-now-passes">Buy Now</button>
                 </li>
                 <li class="Normal-pass">
                     <h3>Normal Annual Pass</h3>
@@ -117,11 +112,11 @@
                         <ul>
                             <li>All Saver Pass Benefits</li>
                             <li>Exclusive Events</li>
-                            <li>Priority Access</li>
+                            <li>Priority Access to Attractions and Shows</li>
                             <li>Souvenir Photos</li>
                         </ul>
                     </article>
-                    <button class="buy-now">Buy Now</button>
+                    <button class="buy-now-passes">Buy Now</button>
                 </li>
                 <li class="Premium-pass">
                     <h3>Premium Annual Pass</h3>
@@ -134,7 +129,101 @@
                             <li>Birthday Perks</li>
                         </ul>
                     </article>
-                    <button class="buy-now">Buy Now</button>
+                    <button class="buy-now-passes">Buy Now</button>
+                </li>
+            </ul>
+        </section>
+        <hr class="AnnualPasses-DayTickets">
+        <h2 class="DayTicket-title" id="DayTicketDeals">Day Ticket Deals</h2>
+        <section class="day-tickets">
+            <p class="Tickets-description">Explore our Day Ticket options for a memorable visit. Choose the Saver Day Ticket for essential access and discounts, the Normal Day Ticket for added perks like exclusive shows and priority attraction access, or the Premium Day Ticket for the ultimate experience with VIP seating, complimentary souvenirs, and free parking. There's a perfect ticket for every visitor to enjoy a fantastic day out.</p>
+            <ul class="tickets">
+                <li class="Saver-Ticket">
+                    <h3>Saver Day Ticket</h3>
+                    <article>
+                        <h4>Saver Day Ticket Benefits:</h4>
+                        <ul>
+                            <li>General Admission</li>
+                            <li>Discounted Parking</li>
+                            <li>Merchandise & Food Discounts</li>
+                        </ul>
+                    </article>
+                    <button class="buy-now-tickets">Buy Now</button>
+                </li>
+                <li class="Normal-Ticket">
+                    <h3>Normal Day Ticket</h3>
+                    <article>
+                        <h4>Normal Day Ticket Benefits:</h4>
+                        <ul>
+                            <li>All Saver Day Ticket Benefits</li>
+                            <li>Access to Exclusive Shows</li>
+                            <li>Priority Access to Attractions and Shows</li>
+                        </ul>
+                    </article>
+                    <button class="buy-now-tickets">Buy Now</button>
+                </li>
+                <li class="Premium-Ticket">
+                    <h3>Premium Day Ticket</h3>
+                    <article>
+                        <h4>Premium Day Ticket Benefits:</h4>
+                        <ul>
+                            <li>All Normal Day Ticket Benefits</li>
+                            <li>VIP Seating at Shows</li>
+                            <li>Free Parking</li>
+                        </ul>
+                    </article>
+                    <button class="buy-now-tickets">Buy Now</button>
+                </li>
+            </ul>
+        </section>
+        <hr class="DayTickets-FoodPromo">
+        <h2 class="FoodPromo-title" id="FoodPromotions">Food Promotions</h2>
+        <section class="Food-Promo">
+            <p class="FoodPromo-description">Enhance your visit with our fantastic food promotions, designed to make your dining experience both enjoyable and
+            affordable. Choose from our exclusive food and drinks passes to satisfy your cravings while saving money. Whether you
+            want a substantial discount or complimentary options, we've got you covered!</p>
+            <ul class="FoodPromo">
+                <li class="HalfPrice">
+                    <h3>50% Off Food and Drinks Pass:</h3>
+                    <article>
+                        <p>Enjoy half-price on all food and beverages throughout your visit. Indulge in a variety of delicious meals and refreshing
+                        drinks without breaking the bank with this great value pass.</p>
+                    </article>
+                    <button class="buy-now-food">Buy Now</button>
+                </li>
+                <li class="FreeFood">
+                    <h3>Free Drinks and Lunch Pass:</h3>
+                    <article>
+                        <p>Get complimentary drinks and a delicious lunch during your visit. Perfect for a worry-free dining experience, this pass
+                        ensures you stay refreshed and satisfied all day long with no additional cost.</p>
+                    </article>
+                    <button class="buy-now-food">Buy Now</button>
+                </li>
+            </ul>
+        </section>
+        <hr class="FoodPromo-Wildlife">
+        <h2 class="WildlifeEncounter-title" id="WildlifeEncounter">Wildlife Encounter</h2>
+        <section class="Wildlife-Encounter">
+            <p class="Wildlife-description">Immerse yourself in the wonders of wildlife with our exclusive encounter options. Choose the Guided Wildlife Tour to
+            learn from our expert guides as you get up close with various animals, or opt for the Animal Feeding Experience for a
+            hands-on session where you can feed and interact with our most popular animals. Both options promise unforgettable
+            memories and fantastic photo opportunities.</p>
+            <ul class="WildlifeEncounter">
+                <li class="Tour">
+                    <h3>Guided Wildlife Tour:</h3><br>
+                    <article>
+                        <p>Join our expert guides for an informative and exciting tour, where you'll get up close and personal with a variety of
+                        animals. Learn fascinating facts and witness wildlife behavior in a safe, enriching environment.</p>
+                    </article>
+                    <button class="book-now">Book Now</button>
+                </li>
+                <li class="Feeding">
+                    <h3>Animal Feeding:</h3><br>
+                    <article>
+                        <p>Participate in an exclusive animal feeding session. This experience allows you to feed and interact with some
+                        of our most popular animals, creating unforgettable memories and fantastic photo opportunities.</p>
+                    </article>
+                    <button class="book-now">Book Now</button>
                 </li>
             </ul>
         </section>
@@ -166,7 +255,7 @@
                 <li><a href="https://instagram.com/themepark" target="_blank">Instagram</a></li>
                 <li><a href="https://youtube.com/themepark" target="_blank">YouTube</a></li>
             </ul>
-            </section>
+        </section>
         <section class="contactUs">
                 <h4>Contact Us</h4>
                 <p class="address">123 Theme Park Ave,<br>Fun City, CA 12345</p>

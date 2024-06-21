@@ -3,66 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="attractions.css">
     <title>Theme Park | Attractions</title>
 </head>
 <body>
-    <!-- Top Nav -->
-    <nav class="p-5 border-b border-slate-500">
-        <div class="flex items-center justify-between">
-            <a href="../../index.html" class="text-4xl text-slate-500">Logo</a>
-            <div>
-                <!-- Account Icon -->
-                <div class="size-10 rounded-full bg-slate-200 grid place-items-center">
-                    <i data-lucide="user"></i>
-                </div>
+    <header>
+        <!-- Top Nav -->
+        <nav class="topnav">
+            <a href="../../index.html" class="logo">Logo</a>
+            <!-- Account Icon -->
+            <div class="account-icon">
+                <i data-lucide="user"></i>
             </div>
-        </div>
-    </nav>
-    <!-- Sub Nav -->
-    <ul class="w-full max-w-5xl mx-auto border border-t-0 border-slate-500 grid grid-cols-6 divide-x divide-slate-300">
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../tickets/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="tag"></i>
-                <span>Tickets</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../attractions/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="roller-coaster"></i>
-                <span>Attractions</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../accommodation/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="bed-double"></i>
-                <span>Places to Stay</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../shop/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="shopping-bag"></i>
-                <span>Shop</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../cart/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="shopping-cart"></i>
-                <span>Cart</span>
-            </a>
-        </li>
-    </ul>
-    <main class="p-4">
-        <!-- Your content goes here -->
-        <div class="py-16 h-96 grid place-items-center">
-            <p>Attractions Page</p>
-        </div>
+        </nav>
+        <!-- Sub Nav -->
+        <nav class="subnav" style="background-image: url('../../assets/images/HomePageBackground4.jpg');">
+            <ul>
+                <li>
+                    <a href="../tickets/index.html">
+                        <i data-lucide="tag"></i>
+                        <span>Tickets</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="current-page">
+                        <i data-lucide="roller-coaster"></i>
+                        <span>Rides & Attractions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../accommodation/index.html">
+                        <i data-lucide="bed-double"></i>
+                        <span>Places to Stay</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../shop/index.html">
+                        <i data-lucide="shopping-bag"></i>
+                        <span>Shop</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../cart/index.html">
+                        <i data-lucide="shopping-cart"></i>
+                        <span>Cart</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Here is a list of our rides and their availability</h2>
+        <ul class="list-of-rides">
+            <li>
+                <img src="../../assets/images/attraction1.jpg" alt="Ride 1">
+                <section>
+                    <h3>Enchanted Forest Trail</h3>
+                    <div class="status">
+                        <h4>Status:</h4>
+                        <h5 style="color: green;">Available</h5>
+                    </div>
+                </section>
+            </li>
+            <li>
+                <img src="../../assets/images/attraction2.jpg" alt="Ride 2">
+                <section>
+                    <h3>Jungle Safari Adventure</h3>
+                    <div class="status">
+                        <h4>Status:</h4>
+                        <h5 style="color: green;">Available</h5>
+                    </div>
+                </section>
+            </li>
+            <li>
+                <img src="../../assets/images/attraction3.jpg" alt="Ride 3">
+                <section>
+                    <h3>Savannah Wildlife Watch</h3>
+                    <div class="status">
+                        <h4>Status:</h4>
+                        <h5 style="color: red;">Temporarily closed</h5>
+                    </div>
+                </section>
+            </li>
+            <li>
+                <img src="../../assets/images/attraction4.jpg" alt="Ride 4">
+                <section>
+                    <h3>Birds of Paradise Exhibit</h3>
+                    <div class="status">
+                        <h4>Status:</h4>
+                        <h5 style="color: orangered;">In process</h5>
+                    </div>
+                </section>
+            </li>
+            <li>
+                <img src="../../assets/images/attraction5.jpg" alt="Ride 5">
+                <section>
+                    <h3>Polar Bear Plunge</h3>
+                    <div class="status">
+                        <h4>Status:</h4>
+                        <h5 style="color: green;">Available</h5>
+                    </div>
+                </section>
+            </li>
+            <li>
+                <img src="../../assets/images/attraction6.jpg" alt="Ride 6">
+                <section>
+                    <h3>Desert Oasis Escape</h3>
+                    <div class="status">
+                        <h4>Status:</h4>
+                        <h5 style="color: orangered;">In process</h5>
+                    </div>
+                </section>
+            </li>
+            <li>
+                <img src="../../assets/images/attraction7.jpg" alt="Ride 1">
+                <section>
+                    <h3>Underwater Wonderland</h3>
+                    <div class="status">
+                        <h4>Status:</h4>
+                        <h5 style="color: green;">Available</h5>
+                    </div>
+                </section>
+            </li>
+            <li>
+                <img src="../../assets/images/attraction8.jpg" alt="Ride 1">
+                <section>
+                    <h3>Butterfly Garden</h3>
+                    <div class="status">
+                        <h4>Status:</h4>
+                        <h5 style="color: green;">Available</h5>
+                    </div>
+                </section>
+            </li>
+            <li>
+                <img src="../../assets/images/attraction9.jpg" alt="Ride 1">
+                <section>
+                    <h3>Rainforest Canopy Walk</h3>
+                    <div class="status">
+                        <h4>Status:</h4>
+                        <h5 style="color: red;">Temporarily closed</h5>
+                    </div>
+                </section>
+            </li>
+            <li>
+                <img src="../../assets/images/attraction10.jpg" alt="Ride 1">
+                <section>
+                    <h3>Mountain Climb Expedition</h3>
+                    <div class="status">
+                        <h4>Status:</h4>
+                        <h5 style="color: green;">Available</h5>
+                    </div>
+                </section>
+            </li>
+        </ul>
     </main>
-    <footer class="p-5 bg-slate-500 text-white text-center">
-        <div>&copy; 2024 Theme Park. All rights reserved.</div>
+    <footer>
+        <section class="quickLinks">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./pages/tickets/index.html">Tickets</a></li>
+                <li><a href="./pages/attractions/index.html">Rides & Attractions</a></li>
+                <li><a href="/pages/accommodation/index.html">Places to Stay</a></li>
+                <li><a href="./pages/shop/index.html">Shop</a></li>
+                <li><a href="./pages/cart/index.html">Cart</a></li>
+            </ul>
+        </section>
+        <section class="news">
+            <h4>Newsletter</h4>
+            <form action="" method="" class="news-email">
+                <input type="email" name="email" placeholder="Enter your email" id="email-box">
+                <button type="submit" id="subscribe">Subscribe</button>
+            </form>
+        </section>
+        <section class="social-media">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="https://facebook.com/themepark" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/themepark" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/themepark" target="_blank">Instagram</a></li>
+                <li><a href="https://youtube.com/themepark" target="_blank">YouTube</a></li>
+            </ul>
+        </section>
+        <section class="contactUs">
+            <h4>Contact Us</h4>
+            <p class="address">123 Theme Park Ave,<br>Fun City, CA 12345</p>
+            <p class="phoneNum">Phone: (123) 456-7890</p>
+            <p class="email">Email: info@themepark.com</p>
+            <p class="hours">Hours: Mon-Sun, 9am - 10pm</p>
+        </section>
+        <section class="CopyRight">
+            <p>&copy; 2024 Theme Park. All rights reserved.</p>
+        </section>
+        <section class="branding">
+            <img src="" alt="Theme Park Logo">
+            <p>Making Dreams Come True Since 1980</p>
+        </section>
     </footer>
-    <footer></footer>
-
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();

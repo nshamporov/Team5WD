@@ -1,6 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     padding-bottom: 20vh;
 }
+
+
+                                                                        /* Special Deal Section */
+
 
 .SpecialDeal-title {
     justify-content: center;
@@ -42,11 +50,11 @@ main {
 }
 
 
-
+                                                                                /* Tickets Navigation */
 
 
 .ticket-nav {
-    margin-top: 20vh;
+    margin-top: 30vh;
 }
 
 .ticket-nav  ul {
@@ -70,6 +78,7 @@ main {
     border: 3px solid black;
     transition: all 0.6s ease-in-out;
     overflow: hidden;
+    min-height: 23vh;
 }
 
 .ticket-nav li:hover{
@@ -83,20 +92,25 @@ main {
     font-size: 1.5em;
 }
 
+.TicketNav-AnnualPasses {
+    margin-top: 30vh;
+    margin-bottom: 20vh;
+    border: none;
+    height: 2rem;
+    background: linear-gradient(to right, rgb(0, 200, 255), rgb(0, 200, 255), rgb(25, 0, 255), rgb(25, 0, 255));
+}
+
+
+                                                                        /* Annual Passes section */
 
 
 .Annualpasses-title {
     justify-content: center;
     text-align: center;
-    margin-top: 30vh;
     font-size: 3em;
     background: linear-gradient(to right, rgb(0, 200, 255), rgb(0, 200, 255), rgb(25, 0, 255), rgb(25, 0, 255));
     background-clip: text;
     color: transparent;
-}
-
-.annual-passes{
-
 }
 
 .passes-description {
@@ -112,10 +126,9 @@ main {
     list-style-type: none;
     justify-content: center;
     gap: 10vw;
-
 }
 
-.buy-now {
+.buy-now-passes {
     background-color: rgb(24, 203, 231);
     color: aliceblue;
     padding-top: 0.7rem;
@@ -130,7 +143,7 @@ main {
     margin-top: 3vh;
 }
 
-.buy-now:hover{
+.buy-now-passes:hover{
     background-color: rgb(22, 161, 183);
     color: #bbc3c3;
 }
@@ -211,4 +224,354 @@ main {
     list-style-type:disc;
     padding-left: 2rem;
     text-align: start;  
+}
+
+.AnnualPasses-DayTickets {
+    margin-top: 30vh;
+    margin-bottom: 20vh;
+    border: none;
+    height: 2rem;
+    background: linear-gradient(to right, rgb(25, 0, 255), rgb(25, 0, 255), rgb(0, 255, 115), rgb(0, 255, 115));
+}
+
+
+                                                                            /* Day Ticket Deals section */
+
+
+.DayTicket-title {
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    background: linear-gradient(to right, rgb(0, 234, 255), rgb(0, 234, 255), rgb(0, 255, 115), rgb(0, 255, 115));
+    background-clip: text;
+    color: transparent;
+}
+
+.Tickets-description {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+}
+
+.tickets {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.buy-now-tickets {
+    background-color: rgb(24, 203, 231);
+    color: aliceblue;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    border-radius: 1.5em;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.1em;
+    border: 0;
+    margin-top: 3vh;
+}
+
+.buy-now-tickets:hover {
+    background-color: rgb(22, 161, 183);
+    color: #bbc3c3;
+}
+
+.Saver-Ticket {
+    border: 2px solid black;
+    width: 100%;
+    max-width: 18vw;
+    background: linear-gradient(to bottom right, rgb(0, 200, 255), rgb(0, 200, 255),  rgb(0, 255, 123), rgb(0, 255, 123));
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.Saver-Ticket h3 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.Saver-Ticket h4 {
+    font-size: 1.1em;
+    text-align: start;
+}
+
+.Saver-Ticket ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    text-align: start;
+}
+
+.Normal-Ticket {
+    border: 2px solid black;
+    width: 100%;
+    max-width: 18vw;
+    background: linear-gradient(to bottom, rgb(0, 200, 255), rgb(0, 200, 255), rgb(0, 255, 123), rgb(0, 255, 123));
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.Normal-Ticket h3 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.Normal-Ticket h4 {
+    font-size: 1.1em;
+    text-align: start;
+}
+
+.Normal-Ticket ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    text-align: start;
+}
+
+.Premium-Ticket {
+    border: 2px solid black;
+    width: 100%;
+    max-width: 18vw;
+    background: linear-gradient(to bottom left, rgb(0, 200, 255), rgb(0, 200, 255), rgb(0, 255, 123), rgb(0, 255, 123));
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.Premium-Ticket h3 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.Premium-Ticket h4 {
+    font-size: 1.1em;
+    text-align: start;
+}
+
+.Premium-Ticket ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    text-align: start;
+}
+
+.DayTickets-FoodPromo {
+    margin-top: 30vh;
+    margin-bottom: 20vh;
+    border: none;
+    height: 2rem;
+    background: linear-gradient(to right, rgb(0, 255, 123), rgb(0, 255, 123), rgb(255, 166, 0), rgb(255, 166, 0));
+}
+
+
+                                                                            /* Food Promotions section */
+
+
+.FoodPromo-title {
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    background: linear-gradient(to right, rgb(0, 255, 123), rgb(0, 255, 123), rgb(255, 166, 0), rgb(255, 166, 0));
+    background-clip: text;
+    color: transparent;
+}
+
+.FoodPromo-description {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+}
+
+.FoodPromo {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.buy-now-food {
+    background-color: rgb(140, 255, 0);
+    color: aliceblue;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    border-radius: 1.5em;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.1em;
+    border: 0;
+    margin-top: 3vh;
+}
+
+.buy-now-food:hover {
+    background-color: rgb(114, 207, 0);
+    color: #bbc3c3;
+}
+
+.HalfPrice {
+    border: 2px solid black;
+    width: 100%;
+    max-width: 18vw;
+    background: linear-gradient(to bottom right, rgb(0, 255, 123), rgb(0, 255, 123), rgb(255, 166, 0), rgb(255, 166, 0));
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.HalfPrice h3 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.HalfPrice h4 {
+    font-size: 1.1em;
+    text-align: start;
+}
+
+.HalfPrice ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    text-align: start;
+}
+
+.FreeFood {
+    border: 2px solid black;
+    width: 100%;
+    max-width: 18vw;
+    background: linear-gradient(to bottom left, rgb(0, 255, 123), rgb(0, 255, 123), rgb(255, 166, 0), rgb(255, 166, 0));
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.FreeFood h3 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.FreeFood h4 {
+    font-size: 1.1em;
+    text-align: start;
+}
+
+.FreeFood ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    text-align: start;
+}
+
+.FoodPromo-Wildlife {
+    margin-top: 30vh;
+    margin-bottom: 20vh;
+    border: none;
+    height: 2rem;
+    background: linear-gradient(to right, rgb(255, 166, 0), rgb(255, 166, 0), rgb(174, 77, 9), rgb(174, 77, 9));
+}
+
+
+                                                                    /* Wildlife Encounter section */
+
+
+.WildlifeEncounter-title {
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    background: linear-gradient(to right, rgb(255, 166, 0), rgb(255, 166, 0), rgb(174, 77, 9), rgb(174, 77, 9));
+    background-clip: text;
+    color: transparent;
+}
+
+.Wildlife-description {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+}
+
+.WildlifeEncounter {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.book-now {
+    background-color: rgb(255, 166, 0);
+    color: aliceblue;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    border-radius: 1.5em;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.1em;
+    border: 0;
+    margin-top: 3vh;
+}
+
+.book-now:hover {
+    background-color: rgb(255, 166, 0);
+    color: #bbc3c3;
+}
+
+.Tour {
+    border: 2px solid black;
+    width: 100%;
+    max-width: 18vw;
+    background: linear-gradient(to bottom right, rgb(255, 166, 0), rgb(255, 166, 0), rgb(174, 77, 9), rgb(174, 77, 9));
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.Tour h3 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.Tour h4 {
+    font-size: 1.1em;
+    text-align: start;
+}
+
+.Tour ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    text-align: start;
+}
+
+.Feeding {
+    border: 2px solid black;
+    width: 100%;
+    max-width: 18vw;
+    background: linear-gradient(to bottom left, rgb(255, 166, 0), rgb(255, 166, 0), rgb(174, 77, 9), rgb(174, 77, 9));
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.Feeding h3 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.Feeding h4 {
+    font-size: 1.1em;
+    text-align: start;
+}
+
+.Feeding ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    text-align: start;
 }
