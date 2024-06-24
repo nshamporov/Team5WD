@@ -3,67 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="accommondation.css">
     <title>Theme Park | Accommodation</title>
+    <script src="../../scripts/index.js"></script>
+    <script src="../../scripts/p5.min.js"></script>
+    <script src="accommodation.js"></script>
 </head>
 <body>
-    <!-- Top Nav -->
-    <nav class="p-5 border-b border-slate-500">
-        <div class="flex items-center justify-between">
-            <a href="../../index.html" class="text-4xl text-slate-500">Logo</a>
-            <div>
-                <!-- Account Icon -->
-                <div class="size-10 rounded-full bg-slate-200 grid place-items-center">
-                    <i data-lucide="user"></i>
-                </div>
+    <header>
+        <!-- Top Nav -->
+        <nav class="topnav">
+            <a href="../../index.html" class="logo">Logo</a>
+            <!-- Account Icon -->
+            <div class="account-icon">
+                <i data-lucide="user"></i>
             </div>
-        </div>
-    </nav>
-    <!-- Sub Nav -->
-    <ul class="w-full max-w-5xl mx-auto border border-t-0 border-slate-500 grid grid-cols-6 divide-x divide-slate-300">
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../tickets/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="tag"></i>
-                <span>Tickets</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../attractions/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="roller-coaster"></i>
-                <span>Attractions</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../accommodation/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="bed-double"></i>
-                <span>Places to Stay</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../shop/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="shopping-bag"></i>
-                <span>Shop</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../cart/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="shopping-cart"></i>
-                <span>Cart</span>
-            </a>
-        </li>
-    </ul>
-
-    <main class="p-4">
-        <!-- Your content goes here -->
-        <div class="py-16 h-96 grid place-items-center">
-            <p>Accommodation Page</p>
-        </div>
+        </nav>
+        <!-- Sub Nav -->
+        <nav class="subnav" style="background-image: url('../../assets/images/HomePageBackground5.jpg');">
+            <ul>
+                <li>
+                    <a href="../tickets/index.html">
+                        <i data-lucide="tag"></i>
+                        <span>Tickets</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../attractions/index.html">
+                        <i data-lucide="roller-coaster"></i>
+                        <span>Rides & Attractions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="current-page">
+                        <i data-lucide="bed-double"></i>
+                        <span>Places to Stay</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../shop/index.html">
+                        <i data-lucide="shopping-bag"></i>
+                        <span>Shop</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../cart/index.html">
+                        <i data-lucide="shopping-cart"></i>
+                        <span>Cart</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="accommodationsCanvas"></div>
+        <h2>Nearest hotels around us</h2>
+        <ul class="list-of-hotels">
+            <li>
+                <section>
+                    <img src="../../assets/images/Marriott-logo.jpg" alt="Hotel 1">
+                    <article class="hotels-text">
+                        <h3>Marriott International</h3>
+                        <p>750 meters away from Our Theme Park</p>
+                        <div class="stars">
+                            <h4>Stars</h4>
+                            <p>★ ★ ★ ★ ★</p>
+                        </div>
+                    </article>
+                </section>
+                <button class="book-now">Book Now</button>
+            </li>
+            <li>
+                <section>
+                    <img src="../../assets/images/Four Seasons Logo.jpg" alt="Hotel 2">
+                    <article class="hotels-text">
+                        <h3>Four Seasons Hotels and Resorts</h3>
+                        <p>1.5 kilometers away from Our Theme Park</p>
+                        <div class="stars">
+                            <h4>Stars</h4>
+                            <p>★ ★ ★ ★</p>
+                        </div>
+                    </article>
+                </section>
+                <button class="book-now">Book Now</button>
+            </li>
+            <li>
+                <section>
+                    <img src="../../assets/images/InterContinental Hotels Group logo.jpg" alt="Hotel 3">
+                    <article class="hotels-text">
+                        <h3>InterContinental Hotels Group</h3>
+                        <p>1.4 kilometers away from Our Theme Park</p>
+                        <div class="stars">
+                            <h4>Stars</h4>
+                            <p>★ ★ ★ ★</p>
+                        </div>
+                    </article>
+                </section>
+                <button class="book-now">Book Now</button>
+            </li>
+            <li>
+                <section>
+                    <img src="../../assets/images/Raddison-logo.jpg" alt="Hotel 4">
+                    <article class="hotels-text">
+                        <h3>Radisson Hotel Group</h3>
+                        <p>900 meters away from Our Theme Park</p>
+                        <div class="stars">
+                            <h4>Stars</h4>
+                            <p>★ ★ ★ ★ ★</p>
+                        </div>
+                    </article>
+                </section>
+                <button class="book-now">Book Now</button>
+            </li>
+        </ul>
     </main>
-
-    <footer class="p-5 bg-slate-500 text-white text-center">
-        <div>&copy; 2024 Theme Park. All rights reserved.</div>
+    <footer>
+        <section class="quickLinks">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./pages/tickets/index.html">Tickets</a></li>
+                <li><a href="./pages/attractions/index.html">Rides & Attractions</a></li>
+                <li><a href="/pages/accommodation/index.html">Places to Stay</a></li>
+                <li><a href="./pages/shop/index.html">Shop</a></li>
+                <li><a href="./pages/cart/index.html">Cart</a></li>
+            </ul>
+        </section>
+        <section class="news">
+            <h4>Newsletter</h4>
+            <form action="" method="" class="news-email">
+                <input type="email" name="email" placeholder="Enter your email" id="email-box">
+                <button type="submit" id="subscribe">Subscribe</button>
+            </form>
+        </section>
+        <section class="social-media">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="https://facebook.com/themepark" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/themepark" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/themepark" target="_blank">Instagram</a></li>
+                <li><a href="https://youtube.com/themepark" target="_blank">YouTube</a></li>
+            </ul>
+        </section>
+        <section class="contactUs">
+            <h4>Contact Us</h4>
+            <p class="address">123 Theme Park Ave,<br>Fun City, CA 12345</p>
+            <p class="phoneNum">Phone: (123) 456-7890</p>
+            <p class="email">Email: info@themepark.com</p>
+            <p class="hours">Hours: Mon-Sun, 9am - 10pm</p>
+        </section>
+        <section class="CopyRight">
+            <p>&copy; 2024 Theme Park. All rights reserved.</p>
+        </section>
+        <section class="branding">
+            <img src="" alt="Theme Park Logo">
+            <p>Making Dreams Come True Since 1980</p>
+        </section>
     </footer>
-
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();

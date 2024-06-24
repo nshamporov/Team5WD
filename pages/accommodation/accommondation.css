@@ -1,0 +1,124 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 15vh;
+}
+
+#accommodationsCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 15vh;
+    border: 0.2rem solid black;
+    background-color: white;
+}
+  
+.list-of-hotels {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-of-hotels li {
+    display: grid;
+    border: 0.2rem solid black;
+    position: relative;
+    box-sizing: border-box;
+    height: 60vh;
+    padding: 2rem;
+    transition: all 0.8s ease-in-out;
+    margin-bottom: 15vh;
+    background-color: white;
+}
+
+.list-of-hotels li:hover {
+    transform: scale(1.04);
+}
+
+.list-of-hotels section {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.list-of-hotels img {
+    width: 100%;
+    height: 100%;
+    max-width: 30vw;
+    max-height: 40vh;
+}
+
+.hotels-text {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-left: 2vw;
+}
+
+.hotels-text h3 {
+    font-size: 2rem;
+}
+
+.hotels-text p {
+    font-size: 1.5rem;
+}
+
+.stars {
+    display: flex;
+    font-size: 1.5rem;
+    border: 0.1rem solid black;
+    width: fit-content;
+    padding: 0 1rem;
+    margin: auto;
+    margin-top: 3vh;
+}
+
+.stars h4 {
+    font-size: 2rem;
+    margin-right: 2vw;
+}
+
+.stars p {
+    font-size: 2rem;
+    color: gold;
+}
+
+.book-now {
+    width: 20%;
+    background-color: rgb(60, 107, 236);
+    color: aliceblue;
+    padding: 1rem;
+    border-radius: 1em;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-size: 1em;
+    position: absolute;
+    bottom: -4vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.book-now:hover {
+    background-color: rgb(35, 65, 148);
+    color: #bbc3c3;
+}

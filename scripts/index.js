@@ -1,3 +1,4 @@
+// subscribe button interaction
 document.addEventListener('DOMContentLoaded', function() {
     let inputbox = document.getElementById('email-box');
     let button = document.getElementById('subscribe');
