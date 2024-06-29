@@ -1,71 +1,648 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../index.css" />
     <title>Theme Park | Shop</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Top Nav -->
     <nav class="p-5 border-b border-slate-500">
-        <div class="flex items-center justify-between">
-            <a href="../../index.html" class="text-4xl text-slate-500">Logo</a>
-            <div>
-                <!-- Account Icon -->
-                <div class="size-10 rounded-full bg-slate-200 grid place-items-center">
-                    <i data-lucide="user"></i>
-                </div>
-            </div>
+      <div class="flex items-center justify-between">
+        <a href="../../index.html" class="text-4xl text-slate-500">Logo</a>
+        <div>
+          <!-- Account Icon -->
+          <div
+            class="size-10 rounded-full bg-slate-200 grid place-items-center"
+          >
+            <i data-lucide="user"></i>
+          </div>
         </div>
+      </div>
     </nav>
     <!-- Sub Nav -->
-    <ul class="w-full max-w-5xl mx-auto border border-t-0 border-slate-500 grid grid-cols-6 divide-x divide-slate-300">
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../tickets/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="tag"></i>
-                <span>Tickets</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../rides/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="tram-front"></i>
-                <span>Rides</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../attractions/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="roller-coaster"></i>
-                <span>Attractions</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../accommodation/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="bed-double"></i>
-                <span>Places to Stay</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../shop/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="shopping-bag"></i>
-                <span>Shop</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../cart/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="shopping-cart"></i>
-                <span>Cart</span>
-            </a>
-        </li>
+    <ul
+      class="w-full max-w-5xl mx-auto border border-t-0 border-slate-500 grid grid-cols-6 divide-x divide-slate-300"
+    >
+      <li class="hover:bg-slate-200 transition ease-in-out">
+        <a
+          href="../tickets/index.html"
+          class="p-4 h-full w-full text-center flex items-center gap-2 justify-center"
+        >
+          <i data-lucide="tag"></i>
+          <span>Tickets</span>
+        </a>
+      </li>
+      <li class="hover:bg-slate-200 transition ease-in-out">
+        <a
+          href="../rides/index.html"
+          class="p-4 h-full w-full text-center flex items-center gap-2 justify-center"
+        >
+          <i data-lucide="tram-front"></i>
+          <span>Rides</span>
+        </a>
+      </li>
+      <li class="hover:bg-slate-200 transition ease-in-out">
+        <a
+          href="../attractions/index.html"
+          class="p-4 h-full w-full text-center flex items-center gap-2 justify-center"
+        >
+          <i data-lucide="roller-coaster"></i>
+          <span>Attractions</span>
+        </a>
+      </li>
+      <li class="hover:bg-slate-200 transition ease-in-out">
+        <a
+          href="../accommodation/index.html"
+          class="p-4 h-full w-full text-center flex items-center gap-2 justify-center"
+        >
+          <i data-lucide="bed-double"></i>
+          <span>Places to Stay</span>
+        </a>
+      </li>
+      <li class="hover:bg-slate-200 transition ease-in-out">
+        <a
+          href="../shop/index.html"
+          class="p-4 h-full w-full text-center flex items-center gap-2 justify-center"
+        >
+          <i data-lucide="shopping-bag"></i>
+          <span>Shop</span>
+        </a>
+      </li>
+      <li class="hover:bg-slate-200 transition ease-in-out">
+        <a
+          href="../cart/index.html"
+          class="p-4 h-full w-full text-center flex items-center gap-2 justify-center"
+        >
+          <i data-lucide="shopping-cart"></i>
+          <span>Cart</span>
+        </a>
+      </li>
     </ul>
-    <main class="p-4">
-        <!-- Your content goes here -->
-        <div class="py-16 h-96 grid place-items-center">
-            <p>Shop Page</p>
+    <main class="p-4 md:p-8">
+      <!-- Your content goes here -->
+
+      <!-- Tickets Section -->
+      <section class="mt-10">
+        <h3 class="font-bold text-3xl mb-5">Tickets</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Adult Ticket -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1578575436955-ef29da568c6c?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Adult Ticket"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Adult Ticket</p>
+              <p class="text-sm mt-1">Full-Day Pass</p>
+              <p class="mt-2">
+                Access to all rides and attractions for a full day.
+              </p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 50</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- Child Ticket -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hpbGR8ZW58MHx8MHx8fDA%3D"
+                alt="Child Ticket"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Child Ticket</p>
+              <p class="text-sm mt-1">Full-Day Pass</p>
+              <p class="mt-2">
+                Access to all rides and attractions for children under 12.
+              </p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 30</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- VIP Ticket -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://plus.unsplash.com/premium_vector-1714618921313-d7eacd0f626c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRpY2tldHxlbnwwfHwwfHx8MA%3D%3D"
+                alt="VIP Ticket"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">VIP Ticket</p>
+              <p class="text-sm mt-1">All-Access Pass</p>
+              <p class="mt-2">
+                Unlimited access to all rides, attractions, and exclusive VIP
+                areas.
+              </p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 100</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <!-- Rides Section -->
+      <section class="mt-10">
+        <h3 class="font-bold text-3xl mb-5">Rides</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Roller Coaster Ride -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1516051662687-567d7c4e8f6a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cm9sbGVyY29hc3RlcnxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Roller Coaster Ride"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Roller Coaster Ride</p>
+              <p class="text-sm mt-1">Single Ride Pass</p>
+              <p class="mt-2">
+                Experience the thrill of our biggest roller coaster.
+              </p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 10</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- Ferris Wheel Ride -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1551967768-21c47cafe6da?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmVycmlzJTIwd2hlZWx8ZW58MHx8MHx8fDA%3D"
+                alt="Ferris Wheel Ride"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Ferris Wheel Ride</p>
+              <p class="text-sm mt-1">Single Ride Pass</p>
+              <p class="mt-2">Enjoy a scenic ride on the Ferris Wheel.</p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 8</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- Bumper Cars -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1498891623634-6fad8510afa1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnVtcGVyJTIwY2Fyc3xlbnwwfHwwfHx8MA%3D%3D"
+                alt="Bumper Cars"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Bumper Cars</p>
+              <p class="text-sm mt-1">Single Ride Pass</p>
+              <p class="mt-2">
+                Have fun crashing into your friends in our bumper cars arena.
+              </p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 7</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- Haunted House -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1661691746100-12c856fba559?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3Bvb2t5JTIwaGFsbG93ZW4lMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Haunted House"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Haunted House</p>
+              <p class="text-sm mt-1">Single Entry Pass</p>
+              <p class="mt-2">Get spooked in our haunted house.</p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 9</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Attractions Section -->
+      <section class="mt-10">
+        <h3 class="font-bold text-3xl mb-5">Attractions</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- 4D Cinema -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1513106580091-1d82408b8cd6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8NGQlMjBjaW5lbWF8ZW58MHx8MHx8fDA%3D"
+                alt="4D Cinema"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">4D Cinema</p>
+              <p class="text-sm mt-1">Single Entry Pass</p>
+              <p class="mt-2">Watch a thrilling 4D movie experience.</p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 12</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- Water Show -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1553112761-4f7500432c01?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHdhdGVyJTIwc2hvd3xlbnwwfHwwfHx8MA%3D%3D"
+                alt="Water Show"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Water Show</p>
+              <p class="text-sm mt-1">Single Show Pass</p>
+              <p class="mt-2">Enjoy a spectacular water show.</p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 15</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- Petting Zoo -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1503919005314-30d93d07d823?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGV0dGluZyUyMHpvb3xlbnwwfHwwfHx8MA%3D%3D"
+                alt="Petting Zoo"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Petting Zoo</p>
+              <p class="text-sm mt-1">Single Entry Pass</p>
+              <p class="mt-2">
+                Interact with friendly animals at our petting zoo.
+              </p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 5</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- Mini Golf -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1679713921323-0be204b79b37?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWluaSUyMGdvbGZ8ZW58MHx8MHx8fDA%3D"
+                alt="Mini Golf"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Mini Golf</p>
+              <p class="text-sm mt-1">Single Game Pass</p>
+              <p class="mt-2">
+                Play a round of mini golf with your friends and family.
+              </p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 10</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Food Section -->
+      <section class="mt-10">
+        <h3 class="font-bold text-3xl mb-5">Food</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Meal Voucher -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1542095496-1ee6599fe563?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVhbCUyMHZvdWNoZXJ8ZW58MHx8MHx8fDA%3D"
+                alt="Meal Voucher"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Meal Voucher</p>
+              <p class="text-sm mt-1">Lunch Special</p>
+              <p class="mt-2">
+                Redeemable at any of our food courts for a special lunch combo.
+              </p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 20</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- Snack Combo -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c25hY2tzfGVufDB8fDB8fHww"
+                alt="Snack Combo"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Snack Combo</p>
+              <p class="text-sm mt-1">Popcorn and Drink</p>
+              <p class="mt-2">Enjoy a popcorn and drink combo.</p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 8</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- Ice Cream -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1541996275318-4890e83660a1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aWNlJTIwY3JlYW0lMjBzdW5kYWV8ZW58MHx8MHx8fDA%3D"
+                alt="Ice Cream"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Ice Cream</p>
+              <p class="text-sm mt-1">Single Scoop</p>
+              <p class="mt-2">Delicious single scoop of ice cream.</p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 4</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- Pizza Slice -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBpenphJTIwc2xpY2V8ZW58MHx8MHx8fDA%3D"
+                alt="Pizza Slice"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Pizza Slice</p>
+              <p class="text-sm mt-1">Cheese or Pepperoni</p>
+              <p class="mt-2">A slice of hot and cheesy pizza.</p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 6</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Other Section -->
+      <section class="mt-10">
+        <h3 class="font-bold text-3xl mb-5">Other</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Bike Rental -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1605468656549-e5b81bd2e524?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmlrZSUyMHJlbnRhbHxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Bike Rental"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Bike Rental</p>
+              <p class="text-sm mt-1">Hourly Rental</p>
+              <p class="mt-2">
+                Rent a bike to explore the theme park at your own pace.
+              </p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 15</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- Locker Rental -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1483861911361-57d334ad765b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxvY2tlciUyMHJlbnRhbHxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Locker Rental"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Locker Rental</p>
+              <p class="text-sm mt-1">Daily Rental</p>
+              <p class="mt-2">
+                Secure your belongings with a locker rental for the day.
+              </p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 5</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- Souvenir Photo -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1696972235468-3bfa7fa8bd9e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGhvdG98ZW58MHx8MHx8fDA%3D"
+                alt="Souvenir Photo"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Souvenir Photo</p>
+              <p class="text-sm mt-1">Theme Park Memory</p>
+              <p class="mt-2">
+                Take home a photo of your favorite theme park moment.
+              </p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 12</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- Stuffed Animal -->
+          <div class="border border-black grid grid-cols-1 rounded">
+            <div class="h-80 overflow-hidden group">
+              <img
+                src="https://images.unsplash.com/photo-1530325553241-4f6e7690cf36?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZmZlZCUyMGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Stuffed Animal"
+                class="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out rounded-t"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-bold text-xl">Stuffed Animal</p>
+              <p class="text-sm mt-1">Theme Park Mascot</p>
+              <p class="mt-2">
+                A cuddly stuffed animal of our theme park mascot.
+              </p>
+            </div>
+            <div
+              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
+            >
+              <p>$ 18</p>
+              <button
+                class="border border-black p-2 min-w-32 hover:bg-slate-100 transition-colors ease-in-out rounded"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-32 mt-20 flex flex-col justify-center items-center bg-slate-400">
+        <h4 class="font-semibold text-4xl text-slate-50">Ready to checkout?</h4>
+        <button
+          class="mt-5 bg-slate-700 text-slate-50 p-4 min-w-64 text-lg transition-colors ease-in-out rounded"
+        >
+          Continue to cart
+        </button>
+      </section>
     </main>
     <footer class="p-5 bg-slate-500 text-white text-center">
-        <div>&copy; 2024 Theme Park. All rights reserved.</div>
+      <div>&copy; 2024 Theme Park. All rights reserved.</div>
     </footer>
     <footer></footer>
 
@@ -73,5 +650,5 @@
     <script>
       lucide.createIcons();
     </script>
-</body>
+  </body>
 </html>
