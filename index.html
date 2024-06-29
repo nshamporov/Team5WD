@@ -3,75 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/home.css">
     <title>Theme Park</title>
+    <script src="/scripts/index.js"></script>
 </head>
 <body>
-    <!-- Top Nav -->
-    <nav class="p-5 border-b border-slate-500">
-        <div class="flex items-center justify-between">
-            <a href="./index.html" class="text-4xl text-slate-500">Logo</a>
-            <div>
+    <header>
+        <!-- Top Nav -->
+        <nav class="topnav">
+                <a href="./index.html" class="logo">Logo</a>
                 <!-- Account Icon -->
-                <div class="size-10 rounded-full bg-slate-200 grid place-items-center">
+                <div class="account-icon">
                     <i data-lucide="user"></i>
                 </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Sub Nav -->
-    <ul class="w-full max-w-5xl mx-auto border border-t-0 border-slate-500 grid grid-cols-6 divide-x divide-slate-300">
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="./pages/tickets/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="tag"></i>
-                <span>Tickets</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="./pages/rides/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="tram-front"></i>
-                <span>Rides</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="./pages/attractions/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="roller-coaster"></i>
-                <span>Attractions</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="./pages/accommodation/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="bed-double"></i>
-                <span>Places to Stay</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="./pages/shop/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="shopping-bag"></i>
-                <span>Shop</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="./pages/cart/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="shopping-cart"></i>
-                <span>Cart</span>
-            </a>
-        </li>
-    </ul>
-    <main class="p-4">
-        <!-- Your content goes here -->
-        <div class="py-16 h-96 grid place-items-center">
-            <p>Your content goes here</p>
-        </div>
+        </nav>
+        <!-- Sub Nav -->
+        <nav class="subnav" style="background-image: url('/assets/images/HomePageBackground3.jpg');">
+            <ul>
+                <li>
+                    <a href="./pages/tickets/index.html">
+                        <i data-lucide="tag"></i>
+                        <span>Tickets</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/attractions/index.html">
+                        <i data-lucide="roller-coaster"></i>
+                        <span>Rides & Attractions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/accommodation/index.html">
+                        <i data-lucide="bed-double"></i>
+                        <span>Places to Stay</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/shop/index.html">
+                        <i data-lucide="shopping-bag"></i>
+                        <span>Shop</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/cart/index.html">
+                        <i data-lucide="shopping-cart"></i>
+                        <span>Cart</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="whatsNew">
+            <h2 class="WhatsNewTitle">What's New</h2>
+            <span class="Carnival">
+                <img src="./assets/images/CarnivalBanner.jpg" alt="Carnival Banner" class="CarnivalBanner">
+                <article class="carnival-description">
+                    <h3 class="carnival-title">🎉 Welcome to the Carnival Extravaganza! 🎉</h3>
+                    <p class="carnival-text">Step right up to the most exciting carnival event of the year at our Theme Park! From thrilling rides and fun games to delicious treats and spectacular shows, there's something for everyone to enjoy. Whether you're here for the jaw-dropping roller coasters, the classic carnival games, or the mouth-watering snacks, our carnival promises endless fun and excitement for the whole family. <br><br>Join us for an unforgettable adventure filled with laughter, joy, and magical moments. Let the festivities begin! 🎠🎟️🎢</p>
+                    <a href="./pages/tickets/index.html" class="buy-tickets">Buy Tickets Now!</a>
+                </article>
+            </span>
+            <span class="WaterPark">
+                <article class="WaterPark-description">
+                    <h3 class="WaterPark-title">🌊 Welcome to the Ultimate Water Park! 🌊</h3>
+                    <p class="WaterPark-text">Dive into a world of splashes and thrills at our Theme Park's Water Park! Whether you're seeking the adrenaline rush of our towering water slides, the relaxing flow of our lazy river, or the fun-filled play zones for the little ones, there's something for everyone to enjoy. <br><br>Join us for a day of sun-soaked fun, where you can cool off in our wave pools, float in the crystal-clear waters, and indulge in delicious treats from our beachside cafes. Make unforgettable memories with family and friends as you explore our water wonderland. <br><br>Get ready for a splash-tastic adventure like no other! 🌞💦🏄‍♂️</p>
+                    <a href="./pages/tickets/index.html" class="buy-tickets">Buy Tickets Now!</a>
+                </article>
+                <img src="./assets/images/WaterParkBanner.jpg" alt="WaterPark Banner" class="WaterParkBanner">
+            </span>
+        </section>
+        <section class="promotions">
+            <h2 class="PromotionsTitle">Promotions</h2>
+            <span class="ImageAndText">
+                <img src="./assets/images/dropoff.jpg" alt="Drop Off Promotion" class="top-image">
+                <article class="promotions-description">
+                    <h3 class="promotions-title">🎉 Exciting Promotions at Theme Park! 🎉</h3>
+                    <p class="promotions-text">Don't miss out on the best deals and special offers at our Theme Park! Whether you're planning a family outing, a group adventure, or a solo escape, we've got promotions that make your visit even more amazing. Enjoy special discounts, early bird savings, and exclusive packages designed to give you the most fun at the best value. <br><br>Hurry, these deals won't last long! Make your visit unforgettable and affordable with our fantastic promotions.</p>
+                    <a href="./pages/tickets/index.html" class="see-more">See More</a>
+                </article>
+            </span>
+            <span class="bottom-images">
+                <img src="./assets/images/buy1get1free.jpg" alt="Buy 1 get 1 Free" class="bottom-left-image">
+                <img src="./assets/images/save60$.png" alt="Save up to 60$" class="bottom-right-image">
+            </span>
+        </section>
     </main>
-    <footer class="p-5 bg-slate-500 text-white text-center">
-        <div>&copy; 2024 Theme Park. All rights reserved.</div>
+    <footer>
+        <section class="quickLinks">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./pages/tickets/index.html">Tickets</a></li>
+                <li><a href="./pages/attractions/index.html">Rides & Attractions</a></li>
+                <li><a href="/pages/accommodation/index.html">Places to Stay</a></li>
+                <li><a href="./pages/shop/index.html">Shop</a></li>
+                <li><a href="./pages/cart/index.html">Cart</a></li>
+            </ul>
+        </section>
+        <section class="news">
+            <h4>Newsletter</h4>
+            <form action="" method="" class="news-email">
+                <input type="email" name="email" placeholder="Enter your email" id="email-box">
+                <button type="submit" id="subscribe">Subscribe</button>
+            </form>
+        </section>
+        <section class="social-media">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="https://facebook.com/themepark" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/themepark" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/themepark" target="_blank">Instagram</a></li>
+                <li><a href="https://youtube.com/themepark" target="_blank">YouTube</a></li>
+            </ul>
+            </section>
+        <section class="contactUs">
+                <h4>Contact Us</h4>
+                <p class="address">123 Theme Park Ave,<br>Fun City, CA 12345</p>
+                <p class="phoneNum">Phone: (123) 456-7890</p>
+                <p class="email">Email: info@themepark.com</p>
+                <p class="hours">Hours: Mon-Sun, 9am - 10pm</p>
+            </section>
+        <section class="CopyRight">
+            <p>&copy; 2024 Theme Park. All rights reserved.</p>
+        </section>
+        <section class="branding">
+            <img src="" alt="Theme Park Logo">
+            <p>Making Dreams Come True Since 1980</p>
+        </section>
     </footer>
-    <footer></footer>
-
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-      lucide.createIcons();
+        lucide.createIcons();
     </script>
 </body>
 </html>
