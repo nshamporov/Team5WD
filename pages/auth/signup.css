@@ -1,0 +1,101 @@
+/* Overflow hidden */
+* {
+	overflow: hidden;
+}
+
+/* Form wrapper for centering the form */
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #FFF5E1;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Form container with box model */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+	display: inline;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.header p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Signup button styling */
+.signup-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF6969;
+    color: #0C1844;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #ffd9d9;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .header h2 {
+        font-size: 1.2em;
+    }
+
+    .signup-button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
