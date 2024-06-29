@@ -160,30 +160,6 @@ footer h4 {
     color: #9ba0a0;
 }
 
-.contactUs {
-
-}
-
-.address {
-
-}
-
-.phoneNum {
-
-}
-
-.email {
-
-}
-
-.hours {
-
-}
-
-.social-media {
-
-}
-
 .social-media ul {
     list-style-type: none;
 }
@@ -229,6 +205,13 @@ footer h4 {
     text-align: center;
     justify-content: center;
     display: flex;
+}
+
+.footer-logo {
+    width: 100%;
+    height: 100%;
+    max-width: 50vw;
+    max-height: 30vh;
 }
 
 .branding {
