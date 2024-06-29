@@ -1,0 +1,16 @@
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.7;
+    pointer-events: none; /* So that bubbles don't interfere with form interactions */
+    z-index: 0; /* Ensure bubbles are behind the form */
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100vh);
+    }
+}
