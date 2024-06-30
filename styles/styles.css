@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+:host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2, 
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+}
+
+                                                                    /* Header */
+        
+                                                                    
+.topnav {
+    display: flex;
+    padding: 0.7em;
+    border-bottom: 0.15em solid rgb(60, 107, 236);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 100%;
+    height: 100vh;
+    max-width:30vw;
+    max-height: 20vh;
+}
+
+.account-icon {
+    border-radius: 100%;
+    background-color: rgba(185, 185, 185, 0.603);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.subnav {
+    background-color: transparent; 
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.subnav ul {
+    width: 100%;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 0.15em solid rgb(60, 107, 236);
+    border-top: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    background-color: white;
+}
+
+.subnav li{
+    border-left: 0.15em solid rgb(60, 107, 236);
+}
+
+.subnav li:nth-last-child(1){
+    border-right: 0.15em solid rgb(60, 107, 236);
+}
+
+.subnav li:hover{
+    background-color: #e2e8f0;
+    transition: all 0.5s ease-in;
+}
+
+#current-page {
+    background-color: #e2e8f0;
+}
+
+#current-page:hover {
+    background-color: #ced2d9;
+    transition: all 0.5s ease-in;
+}
+
+.subnav a {
+    padding: 1rem; 
+    height: 100%;
+    width: 100%;
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.background-container {
+    position: relative;
+    height: 100vh;
+}
+
+/* .background-image img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+     
+} */
+
+                                                        /* Footer */
+
+footer {
+    padding: 1.25rem;
+    background-color: rgb(60, 107, 236); 
+    color: aliceblue;
+    text-align: center; 
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h4 {
+    font-size: larger;
+    color: #000;
+}
+
+.quickLinks ul {
+    list-style-type: none;
+}
+
+.quickLinks a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: all 0.3s ease-in-out;
+}
+
+.quickLinks a:hover{
+    color: #9ba0a0;
+}
+
+.social-media ul {
+    list-style-type: none;
+}
+
+.social-media a{
+    color: aliceblue;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}   
+
+.social-media a:hover {
+    color: #9ba0a0;
+}
+
+.news-email input{
+    width: 100%;
+    padding: 0.5em 1em;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    background-color: #d0d4d4;
+}
+
+.news button{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.4em 1em;
+    border-radius: 3em;
+    margin-left: 2.5vw;
+    background-color: #2eeccd;
+    transition: all 0.3s ease-in-out;
+    border-color: transparent;
+}
+
+.news button:hover {
+    background-color: #24b69d;
+}
+
+
+.CopyRight {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.footer-logo {
+    width: 100%;
+    height: 100%;
+    max-width: 20vw;
+    max-height: 30vh;
+}
+
+.branding {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
