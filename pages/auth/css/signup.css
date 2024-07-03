@@ -1,5 +1,5 @@
 /* Overflow hidden */
-* {
+body {
 	overflow: hidden;
 }
 

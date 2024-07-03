@@ -60,6 +60,13 @@ body {
     max-height: 20vh;
 }
 
+.signflow-logo {
+    max-width:20vw;
+    max-height: 20vh;
+    display: inline-block; 
+    justify-content: center;
+}
+
 .account-icon {
     border-radius: 100%;
     background-color: rgb(255, 217, 217); /* SECONDARY LIGHT */
