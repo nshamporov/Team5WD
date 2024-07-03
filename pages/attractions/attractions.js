@@ -15,7 +15,7 @@ function setup() {
 
 function draw() {
     background(255);
-    fill(60, 107, 236);
+    fill(255, 217, 217); // SECONDARY LIGHT
     noStroke();
 
     for (let y = 0; y < height; y += spacing) {

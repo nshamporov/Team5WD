@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="tickets.css">
-    <title>Theme Park | Tickets</title>
-    <script src="../../scripts/index.js"></script>
+    <title>Dreamland Adventures | Tickets</title>
+    <script src="/scripts/index.js"></script>
 </head>
 <body>
     <header>
         <!-- Top Nav -->
         <nav class="topnav">
-                <a href="../../index.html" class="logo"><img src="/assets/images/logo.png" alt="logo" class="header-logo"></a>
+                <a href="/index.html" class="logo"><img src="/assets/images/logo.png" alt="logo" class="header-logo"></a>
                 <!-- Account Icon -->
                 <div class="account-icon">
-                    <i data-lucide="user"></i>
+                    <div>
+                        <a href="../auth/login.html">Login</a>
+                        <a href="../auth/signup.html">Register</a>
+				    </div>
                 </div>
         </nav>
         <!-- Sub Nav -->
-        <nav class="subnav" style="background-image: url('../../assets/images/HomePageBackground2.jpeg');">
+        <nav class="subnav" style="background-image: url('/assets/images/HomePageBackground2.jpeg');">
             <ul>
                 <li>
-                    <a href="#" id="current-page">
+                    <a href="../tickets/index.html" id="current-page">
                         <i data-lucide="tag"></i>
                         <span>Tickets</span>
                     </a>
@@ -47,6 +50,12 @@
                 </li>
                 <li>
                     <a href="../checkout/index.html">
+                        <i data-lucide="credit-card"></i>
+                        <span>Checkout</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../cart/index.html">
                         <i data-lucide="shopping-cart"></i>
                         <span>Cart</span>
                     </a>
@@ -76,15 +85,14 @@
                 <p><br>Don't miss this opportunity to beat the crowds and maximize your theme park experience! Grab your tickets now and get ready for a day of adventure and excitement.<br><br>
                 <em>Terms and Conditions apply. Early Bird Special available for a limited time. Discount applies automatically at checkout. Free souvenir photo subject to availability. Exclusive ride access based on ride availability.</em></p>
             </article>
-            <img src="../../assets/images/EarlyBird.jpg">
+            <img src="/assets/images/EarlyBird.jpg">
         </section>
         <nav class="ticket-nav">
             <ul>
-                <a href="#AnnualPasses"><li style="background-image: url('../../assets/images/annual-pass-banner1.png');"></li></a>
-                <a href="#DayTicketDeals"><li style="background-image: url('../../assets/images/single-daily-ticket.png');"></li></a>
-                <a href="#FoodPromotions"><li style="background-image:url('../../assets/images/food-promotions-banner.jpg');"></li></a>
-                <a href="#WildlifeEncounter"><li style="background-image:url('../../assets/images/wildlife-encounter-banner.jpg')"><span>Wildlife Encounter</span></li></a>
-                </li>
+                <a href="#AnnualPasses"><li style="background-image: url('/assets/images/annual-pass-banner1.png');"></li></a>
+                <a href="#DayTicketDeals"><li style="background-image: url('/assets/images/single-daily-ticket.png');"></li></a>
+                <a href="#FoodPromotions"><li style="background-image:url('/assets/images/food-promotions-banner.jpg');"></li></a>
+                <a href="#WildlifeEncounter"><li style="background-image:url('/assets/images/wildlife-encounter-banner.jpg')"><span>Wildlife Encounter</span></li></a>
             </ul>
         </nav>
         <hr class="TicketNav-AnnualPasses">
@@ -233,11 +241,11 @@
             <h4>Quick Links</h4>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="./pages/tickets/index.html">Tickets</a></li>
-                <li><a href="./pages/attractions/index.html">Rides & Attractions</a></li>
+                <li><a href="/pages/tickets/index.html">Tickets</a></li>
+                <li><a href="/pages/attractions/index.html">Rides & Attractions</a></li>
                 <li><a href="/pages/accommodation/index.html">Places to Stay</a></li>
-                <li><a href="./pages/shop/index.html">Shop</a></li>
-                <li><a href="./pages/cart/index.html">Cart</a></li>
+                <li><a href="/pages/shop/index.html">Shop</a></li>
+                <li><a href="/pages/cart/index.html">Cart</a></li>
             </ul>
         </section>
         <section class="news">
@@ -263,7 +271,7 @@
                 <p class="email">Email: info@themepark.com</p>
                 <p class="hours">Hours: Mon-Sun, 9am - 10pm</p>
             </section>
-        <section class="CopyRight">
+        <section class="copyright">
             <p>&copy; 2024 Theme Park. All rights reserved.</p>
         </section>
         <section class="branding">
