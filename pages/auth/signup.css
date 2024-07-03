@@ -84,7 +84,6 @@
     background-color: #ffd9d9;
 }
 
-/* Media query for responsiveness */
 @media (max-width: 600px) {
     .form-container {
         padding: 15px;

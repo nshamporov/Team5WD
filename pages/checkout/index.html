@@ -4,48 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../index.css">
-    <title>Theme Park | Checkout</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Dreamland Adventures | Checkout</title>
 </head>
 <body>
     <!-- Top Nav -->
-    <nav class="p-5 border-b border-slate-500">
-        <div class="flex items-center justify-between">
-            <a href="../../index.html" class="text-4xl text-slate-500">Logo</a>
-            <div>
-                <!-- Account Icon -->
-                <div class="size-10 rounded-full bg-slate-200 grid place-items-center">
-                    <i data-lucide="user"></i>
-                </div>
-            </div>
+    <nav class="p-5 border-b border-secondary-200">
+      <div class="flex items-center justify-between">
+        <div>
+          <img src="/assets/images/logo.png" alt="Logo" class="mx-auto h-32">
         </div>
+        <div>
+          <!-- Account Icon -->
+          <div
+            class="size-32 rounded-full bg-secondary-100 grid place-items-center"
+          >
+            <div>
+					<a href="../auth/login.html">Login</a>
+					<a href="../auth/signup.html">Register</a>
+				</div>
+          </div>
+        </div>
+      </div>
     </nav>
     <!-- Sub Nav -->
-    <ul class="w-full max-w-5xl mx-auto border border-t-0 border-slate-500 grid grid-cols-6 divide-x divide-slate-300">
-        <li class="hover:bg-slate-200 transition ease-in-out">
+    <ul class="w-full max-w-5xl mx-auto border border-t-0 border-secondary-200 grid grid-cols-6 divide-x divide-secondary-200">
+        <li class="hover:bg-secondary-100 transition ease-in-out">
             <a href="../tickets/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
                 <i data-lucide="tag"></i>
                 <span>Tickets</span>
             </a>
         </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
+        <li class="hover:bg-secondary-100 transition ease-in-out">
             <a href="../attractions/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
                 <i data-lucide="roller-coaster"></i>
                 <span>Attractions</span>
             </a>
         </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
+        <li class="hover:bg-secondary-100 transition ease-in-out">
             <a href="../accommodation/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
                 <i data-lucide="bed-double"></i>
                 <span>Places to Stay</span>
             </a>
         </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
+        <li class="hover:bg-secondary-100 transition ease-in-out">
             <a href="../shop/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
                 <i data-lucide="shopping-bag"></i>
                 <span>Shop</span>
             </a>
         </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
+        <li class="hover:bg-secondary-100 transition ease-in-out">
+            <a href="../checkout/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
+                <i data-lucide="credit-card"></i>
+                <span>Checkout</span>
+            </a>
+        </li>
+        <li class="hover:bg-secondary-100 transition ease-in-out">
             <a href="../cart/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
                 <i data-lucide="shopping-cart"></i>
                 <span>Cart</span>
@@ -56,84 +70,83 @@
     <main class="p-4 md:p-8">
         <div class="grid md:grid-cols-12 gap-10 mt-10">
             <section class="col-span-12 md:col-span-8">
-                <div class="grid grid-cols-3 items-center py-5 border-b border-slate-400">
+                <div class="grid grid-cols-3 items-center py-5 border-b border-secondary-200">
                     <div>
                         <p class="font-semibold">Child ticket</p>
                         <p class="text-sm">2nd July, 2024</p>
                     </div>
                     <div class="flex items-center gap-3 justify-center">
-                        <button class="border border-black size-8 flex justify-center items-center hover:bg-slate-200 transition-all ease-in-out rounded">-</button>
+                        <button class="border border-black size-8 flex justify-center items-center hover:bg-secondary-100 transition-all ease-in-out rounded">-</button>
                         <p>3</p>
-                        <button class="border border-black size-8 flex justify-center items-center hover:bg-slate-200 transition-all ease-in-out rounded">+</button>
+                        <button class="border border-black size-8 flex justify-center items-center hover:bg-secondary-100 transition-all ease-in-out rounded">+</button>
                     </div>
                     <div class="text-end">
                         <p class="font-semibold">$ 49.9</p>
                     </div>
                 </div>
-                <div class="grid grid-cols-3 items-center py-5 border-b border-slate-400">
+                <div class="grid grid-cols-3 items-center py-5 border-b border-secondary-200">
                     <div>
                         <p class="font-semibold">Rollercoaster ride</p>
                         <p class="text-sm">3rd July, 2024</p>
                     </div>
                     <div class="flex items-center gap-3 justify-center">
-                        <button class="border border-black size-8 flex justify-center items-center hover:bg-slate-200 transition-all ease-in-out rounded">-</button>
+                        <button class="border border-black size-8 flex justify-center items-center hover:bg-secondary-100 transition-all ease-in-out rounded">-</button>
                         <p>4</p>
-                        <button class="border border-black size-8 flex justify-center items-center hover:bg-slate-200 transition-all ease-in-out rounded">+</button>
+                        <button class="border border-black size-8 flex justify-center items-center hover:bg-secondary-100 transition-all ease-in-out rounded">+</button>
                     </div>
                     <div class="text-end">
                         <p class="font-semibold">$ 49.9</p>
                     </div>
                 </div>
-                <div class="grid grid-cols-3 items-center py-5 border-b border-slate-400">
+                <div class="grid grid-cols-3 items-center py-5 border-b border-secondary-200">
                     <div>
                         <p class="font-semibold">Ferris wheel</p>
                         <p class="text-sm">2nd July, 2024</p>
                     </div>
                     <div class="flex items-center gap-3 justify-center">
-                        <button class="border border-black size-8 flex justify-center items-center hover:bg-slate-200 transition-all ease-in-out rounded">-</button>
+                        <button class="border border-black size-8 flex justify-center items-center hover:bg-secondary-100 transition-all ease-in-out rounded">-</button>
                         <p>1</p>
-                        <button class="border border-black size-8 flex justify-center items-center hover:bg-slate-200 transition-all ease-in-out rounded">+</button>
+                        <button class="border border-black size-8 flex justify-center items-center hover:bg-secondary-100 transition-all ease-in-out rounded">+</button>
                     </div>
                     <div class="text-end">
                         <p class="font-semibold">$ 9.99</p>
                     </div>
                 </div>
-                <div class="grid grid-cols-3 items-center py-5 border-b border-slate-400">
+                <div class="grid grid-cols-3 items-center py-5 border-b border-secondary-200">
                     <div>
                         <p class="font-semibold">Petting zoo</p>
                         <p class="text-sm">2nd July, 2024</p>
                     </div>
                     <div class="flex items-center gap-3 justify-center">
-                        <button class="border border-black size-8 flex justify-center items-center hover:bg-slate-200 transition-all ease-in-out rounded">-</button>
+                        <button class="border border-black size-8 flex justify-center items-center hover:bg-secondary-100 transition-all ease-in-out rounded">-</button>
                         <p>1</p>
-                        <button class="border border-black size-8 flex justify-center items-center hover:bg-slate-200 transition-all ease-in-out rounded">+</button>
+                        <button class="border border-black size-8 flex justify-center items-center hover:bg-secondary-100 transition-all ease-in-out rounded">+</button>
                     </div>
                     <div class="text-end">
                         <p class="font-semibold">$ 4.99</p>
                     </div>
                 </div>
             </section>
-            <aside class="col-span-12 md:col-span-4 border border-slate-400 rounded p-4 min-h-[400px]">
+            <aside class="col-span-12 md:col-span-4 border border-secondary-200 rounded p-4 min-h-[400px]">
                 <h4 class="font-semibold text-3xl">Order Summary</h4>
                 <div class="grid grid-cols-2 mt-8">
                     <p>Subtotal (4 items)</p>
                     <p class="text-end">$ 199.6</p>
                     <p>Taxes & fees</p>
                     <p class="text-end">$ 19.96</p>
-                    <div class="border-t border-slate-400 col-span-2 my-6"></div>
+                    <div class="border-t border-secondary-200 col-span-2 my-6"></div>
                     <p class="font-semibold text-xl">Total</p>
                     <p class="text-end">$ 199.6</p>
-                    <button class="w-full bg-slate-500 hover:bg-slate-600 transition ease-in-out text-white py-3 rounded mt-4 col-span-2">Checkout</button>
-                    <button class="w-full bg-slate-200 hover:bg-slate-300 transition ease-in-out text-slate-500 py-3 rounded mt-4 col-span-2">Continue Shopping</button>
+                    <button class="w-full bg-secondary-200 hover:bg-secondary-100 transition ease-in-out text-white py-3 rounded mt-4 col-span-2">Checkout</button>
+                    <button class="w-full bg-secondary-200 hover:bg-secondary-100 transition ease-in-out text-white py-3 rounded mt-4 col-span-2">Continue Shopping</button>
                 </div>
             </aside>
         </div>
     </main>
 
-    <footer class="p-5 bg-slate-500 text-white text-center">
+    <footer class="p-5 bg-secondary-200 text-white text-center">
         <div>&copy; 2024 Theme Park. All rights reserved.</div>
     </footer>
-    <footer></footer>
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>

@@ -4,70 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../index.css">
-    <title>Theme Park | Cart</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Dreamland Adventures | Cart</title>
 </head>
 <body>
      <!-- Top Nav -->
-     <nav class="p-5 border-b border-slate-500">
+     <nav class="p-5 border-b border-secondary-200">
         <div class="flex items-center justify-between">
-            <a href="../../index.html" class="text-4xl text-slate-500">Logo</a>
-            <div>
-                <!-- Account Icon -->
-                <div class="size-10 rounded-full bg-slate-200 grid place-items-center">
-                    <i data-lucide="user"></i>
-                </div>
+          <div>
+            <img src="/assets/images/logo.png" alt="Logo" class="mx-auto h-32">
+          </div>
+          <div>
+            <!-- Account Icon -->
+            <div
+              class="size-32 rounded-full bg-secondary-100 grid place-items-center"
+            >
+              <div>
+                      <a href="../auth/login.html">Login</a>
+                      <a href="../auth/signup.html">Register</a>
+                  </div>
             </div>
+          </div>
         </div>
-    </nav>
-    <!-- Sub Nav -->
-    <ul class="w-full max-w-5xl mx-auto border border-t-0 border-slate-500 grid grid-cols-6 divide-x divide-slate-300">
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../tickets/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="tag"></i>
-                <span>Tickets</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../rides/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="tram-front"></i>
-                <span>Rides</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../attractions/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="roller-coaster"></i>
-                <span>Attractions</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../accommodation/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="bed-double"></i>
-                <span>Places to Stay</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../shop/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="shopping-bag"></i>
-                <span>Shop</span>
-            </a>
-        </li>
-        <li class="hover:bg-slate-200 transition ease-in-out">
-            <a href="../cart/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="shopping-cart"></i>
-                <span>Cart</span>
-            </a>
-        </li>
-    </ul>
+      </nav>
+      <!-- Sub Nav -->
+      <ul class="w-full max-w-5xl mx-auto border border-t-0 border-secondary-200 grid grid-cols-6 divide-x divide-secondary-200">
+          <li class="hover:bg-secondary-100 transition ease-in-out">
+              <a href="../tickets/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
+                  <i data-lucide="tag"></i>
+                  <span>Tickets</span>
+              </a>
+          </li>
+          <li class="hover:bg-secondary-100 transition ease-in-out">
+              <a href="../attractions/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
+                  <i data-lucide="roller-coaster"></i>
+                  <span>Attractions</span>
+              </a>
+          </li>
+          <li class="hover:bg-secondary-100 transition ease-in-out">
+              <a href="../accommodation/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
+                  <i data-lucide="bed-double"></i>
+                  <span>Places to Stay</span>
+              </a>
+          </li>
+          <li class="hover:bg-secondary-100 transition ease-in-out">
+              <a href="../shop/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
+                  <i data-lucide="shopping-bag"></i>
+                  <span>Shop</span>
+              </a>
+          </li>
+          <li class="hover:bg-secondary-100 transition ease-in-out">
+              <a href="../checkout/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
+                  <i data-lucide="credit-card"></i>
+                  <span>Checkout</span>
+              </a>
+          </li>
+          <li class="hover:bg-secondary-100 transition ease-in-out">
+              <a href="../cart/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
+                  <i data-lucide="shopping-cart"></i>
+                  <span>Cart</span>
+              </a>
+          </li>
+      </ul>
+
     <main class="p-4">
         <!-- Your content goes here -->
         <div class="py-16 h-96 grid place-items-center">
             <p>Cart Page</p>
         </div>
     </main>
-    <footer class="p-5 bg-slate-500 text-white text-center">
+    <footer class="p-5 bg-secondary-200 text-white text-center">
         <div>&copy; 2024 Theme Park. All rights reserved.</div>
     </footer>
-    <footer></footer>
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>

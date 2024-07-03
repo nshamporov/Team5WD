@@ -27,19 +27,28 @@ h6 {
     font-weight: inherit;
 }
 
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
 body {
     margin: 0;
     padding: 0;
     line-height: inherit;
+	background-color: rgb(255, 245, 225); /* PRIMARY */
 }
 
-                                                                    /* Header */
+/* Header */
         
                                                                     
 .topnav {
     display: flex;
     padding: 0.7em;
-    border-bottom: 0.15em solid rgb(60, 107, 236);
+    border-bottom: 0.05em solid rgb(255, 105, 105); /* SECONDARY DARK */
     justify-content: space-between;
     align-items: center;
 }
@@ -53,11 +62,12 @@ body {
 
 .account-icon {
     border-radius: 100%;
-    background-color: rgba(185, 185, 185, 0.603);
+    background-color: rgb(255, 217, 217); /* SECONDARY LIGHT */
     display: grid;
     justify-content: center;
     align-items: center;
     padding: 1.5em;
+    height: 9em;
 }
 
 .subnav {
@@ -76,33 +86,33 @@ body {
     max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 0.15em solid rgb(60, 107, 236);
+    border-bottom: 0.05em solid rgb(255, 105, 105); /* SECONDARY DARK */
     border-top: 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     list-style-type: none;
-    background-color: white;
+    background-color: rgb(255, 245, 225); /* PRIMARY */
 }
 
 .subnav li{
-    border-left: 0.15em solid rgb(60, 107, 236);
+    border-left: 0.05em solid rgb(255, 105, 105); /* SECONDARY DARK */
 }
 
 .subnav li:nth-last-child(1){
-    border-right: 0.15em solid rgb(60, 107, 236);
+    border-right: 0.15em solid rgb(255, 105, 105); /* SECONDARY DARK */
 }
 
 .subnav li:hover{
-    background-color: #e2e8f0;
+    background-color: rgb(255, 105, 105); /* SECONDARY DARK */
     transition: all 0.5s ease-in;
 }
 
 #current-page {
-    background-color: #e2e8f0;
+    background-color: rgb(255, 105, 105); /* SECONDARY DARK */
 }
 
 #current-page:hover {
-    background-color: #ced2d9;
+    background-color: rgb(255, 217, 217); /* SECONDARY LIGHT */
     transition: all 0.5s ease-in;
 }
 
@@ -131,12 +141,12 @@ body {
      
 } */
 
-                                                        /* Footer */
+ /* Footer */
 
 footer {
     padding: 1.25rem;
-    background-color: rgb(60, 107, 236); 
-    color: aliceblue;
+    background-color: rgb(255, 105, 105); /* SECONDARY DARK */
+    color: rgb(255, 245, 225); /* PRIMARY */
     text-align: center; 
     display: flex;
     justify-content: space-around;
@@ -153,12 +163,12 @@ footer h4 {
 
 .quickLinks a{
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(255, 245, 225); /* PRIMARY */
     transition: all 0.3s ease-in-out;
 }
 
 .quickLinks a:hover{
-    color: #9ba0a0;
+    color: rgb(255, 217, 217); /* SECONDARY LIGHT */
 }
 
 .social-media ul {
@@ -166,13 +176,13 @@ footer h4 {
 }
 
 .social-media a{
-    color: aliceblue;
+    color: rgb(255, 245, 225); /* PRIMARY */
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }   
 
 .social-media a:hover {
-    color: #9ba0a0;
+    color: rgb(255, 217, 217); /* SECONDARY LIGHT */
 }
 
 .news-email input{
@@ -180,7 +190,7 @@ footer h4 {
     padding: 0.5em 1em;
     margin-bottom: 2vh;
     margin-top: 2vh;
-    background-color: #d0d4d4;
+    background-color: rgb(255, 245, 225); /* PRIMARY */
 }
 
 .news button{
@@ -191,13 +201,13 @@ footer h4 {
     padding: 0.4em 1em;
     border-radius: 3em;
     margin-left: 2.5vw;
-    background-color: #2eeccd;
+    background-color: rgb(255, 217, 217); /* SECONDARY LIGHT */
     transition: all 0.3s ease-in-out;
     border-color: transparent;
 }
 
 .news button:hover {
-    background-color: #24b69d;
+    background-color: rgb(255, 245, 225); /* PRIMARY */
 }
 
 
