@@ -11,18 +11,16 @@
 <body>
     <header>
         <!-- Top Nav -->
-        <nav class="topnav">
-                <a href="#" class="logo"><img src="/assets/images/logo.png" alt="logo" class="header-logo"></a>
-                <!-- Account Icon -->
-                <div class="account-icon">
-                    <div>
-                        <a href="/pages/auth/login.html" class="logo">Login</a>
-                        <a href="/pages/auth/signup.html" class="logo">Register</a>
-				    </div>
-                </div>
-        </nav>
+        <div class="topnav">
+            <a href="#" class="logo"><img src="/assets/images/logo.png" alt="logo" class="header-logo"></a>
+            <!-- Account Icon -->
+            <div class="account-icon">
+                <a href="/pages/auth/login.html" class="logo">Login</a>
+                <a href="/pages/auth/signup.html" class="logo">Register</a>
+            </div>
+        </div>
         <!-- Sub Nav -->
-        <nav class="subnav" style="background-image: url('/assets/images/HomePageBackground3.jpg');">
+        <div class="subnav" style="background-image: url('/assets/images/HomePageBackground3.jpg');">
             <ul>
                 <li>
                     <a href="/pages/tickets/index.html">
@@ -55,48 +53,48 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/pages/checkout/index.html">
+                    <a href="/pages/cart/index.html">
                         <i data-lucide="shopping-cart"></i>
                         <span>Cart</span>
                     </a>
                 </li>
             </ul>
-        </nav>
+        </div>
     </header>
     <main>
         <section class="whatsNew">
             <h2 class="WhatsNewTitle">What's New</h2>
-            <span class="Carnival">
+            <div class="Carnival">
                 <img src="./assets/images/CarnivalBanner.jpg" alt="Carnival Banner" class="CarnivalBanner">
                 <article class="carnival-description">
                     <h3 class="carnival-title">🎉 Welcome to the Carnival Extravaganza! 🎉</h3>
                     <p class="carnival-text">Step right up to the most exciting carnival event of the year at our Theme Park! From thrilling rides and fun games to delicious treats and spectacular shows, there's something for everyone to enjoy. Whether you're here for the jaw-dropping roller coasters, the classic carnival games, or the mouth-watering snacks, our carnival promises endless fun and excitement for the whole family. <br><br>Join us for an unforgettable adventure filled with laughter, joy, and magical moments. Let the festivities begin! 🎠🎟️🎢</p>
                     <a href="/pages/tickets/index.html" class="buy-tickets">Buy Tickets Now!</a>
                 </article>
-            </span>
-            <span class="WaterPark">
+            </div>
+            <div class="WaterPark">
                 <article class="WaterPark-description">
                     <h3 class="WaterPark-title">🌊 Welcome to the Ultimate Water Park! 🌊</h3>
                     <p class="WaterPark-text">Dive into a world of splashes and thrills at our Theme Park's Water Park! Whether you're seeking the adrenaline rush of our towering water slides, the relaxing flow of our lazy river, or the fun-filled play zones for the little ones, there's something for everyone to enjoy. <br><br>Join us for a day of sun-soaked fun, where you can cool off in our wave pools, float in the crystal-clear waters, and indulge in delicious treats from our beachside cafes. Make unforgettable memories with family and friends as you explore our water wonderland. <br><br>Get ready for a splash-tastic adventure like no other! 🌞💦🏄‍♂️</p>
                     <a href="/pages/tickets/index.html" class="buy-tickets">Buy Tickets Now!</a>
                 </article>
                 <img src="./assets/images/WaterParkBanner.jpg" alt="WaterPark Banner" class="WaterParkBanner">
-            </span>
+            </div>
         </section>
         <section class="promotions">
             <h2 class="PromotionsTitle">Promotions</h2>
-            <span class="ImageAndText">
+            <div class="ImageAndText">
                 <img src="./assets/images/dropoff.jpg" alt="Drop Off Promotion" class="top-image">
                 <article class="promotions-description">
                     <h3 class="promotions-title">🎉 Exciting Promotions at Theme Park! 🎉</h3>
                     <p class="promotions-text">Don't miss out on the best deals and special offers at our Theme Park! Whether you're planning a family outing, a group adventure, or a solo escape, we've got promotions that make your visit even more amazing. Enjoy special discounts, early bird savings, and exclusive packages designed to give you the most fun at the best value. <br><br>Hurry, these deals won't last long! Make your visit unforgettable and affordable with our fantastic promotions.</p>
                     <a href="/pages/tickets/index.html" class="see-more">See More</a>
                 </article>
-            </span>
-            <span class="bottom-images">
+            </div>
+            <div class="bottom-images">
                 <img src="./assets/images/buy1get1free.jpg" alt="Buy 1 get 1 Free" class="bottom-left-image">
                 <img src="./assets/images/save60$.png" alt="Save up to 60$" class="bottom-right-image">
-            </span>
+            </div>
         </section>
     </main>
     <footer>
@@ -105,7 +103,7 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="/pages/tickets/index.html">Tickets</a></li>
-                <li><a href="/pages/attractions/index.html">Rides & Attractions</a></li>
+                <li><a href="/pages/attractions/index.html">Rides &amp; Attractions</a></li>
                 <li><a href="/pages/accommodation/index.html">Places to Stay</a></li>
                 <li><a href="/pages/shop/index.html">Shop</a></li>
                 <li><a href="/pages/cart/index.html">Cart</a></li>
@@ -113,7 +111,7 @@
         </section>
         <section class="news">
             <h4>Newsletter</h4>
-            <form action="" method="" class="news-email">
+            <form action="newsmail" class="news-email">
                 <input type="email" name="email" placeholder="Enter your email" id="email-box">
                 <button type="submit" id="subscribe">Subscribe</button>
             </form>
@@ -126,14 +124,14 @@
                 <li><a href="https://instagram.com/themepark" target="_blank">Instagram</a></li>
                 <li><a href="https://youtube.com/themepark" target="_blank">YouTube</a></li>
             </ul>
-            </section>
+        </section>
         <section class="contactUs">
-                <h4>Contact Us</h4>
-                <p class="address">123 Theme Park Ave,<br>Fun City, CA 12345</p>
-                <p class="phoneNum">Phone: (123) 456-7890</p>
-                <p class="email">Email: info@themepark.com</p>
-                <p class="hours">Hours: Mon-Sun, 9am - 10pm</p>
-            </section>
+            <h4>Contact Us</h4>
+            <p class="address">123 Theme Park Ave,<br>Fun City, CA 12345</p>
+            <p class="phoneNum">Phone: (123) 456-7890</p>
+            <p class="email">Email: info@themepark.com</p>
+            <p class="hours">Hours: Mon-Sun, 9am - 10pm</p>
+        </section>
         <section class="CopyRight">
             <p>&copy; 2024 Theme Park. All rights reserved.</p>
         </section>
