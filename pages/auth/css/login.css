@@ -13,3 +13,8 @@
     animation: slide-in 0.5s ease-in-out forwards;
 }
 
+#continue-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

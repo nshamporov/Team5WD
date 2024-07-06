@@ -10,7 +10,7 @@ function setup() {
     attractionsCanvas.parent('attractionsCanvas');
 
     maxDist = dist(0, 0, width, height);
-    spacing = 40;
+    spacing = 50;
 }
 
 function draw() {
@@ -21,7 +21,7 @@ function draw() {
     for (let y = 0; y < height; y += spacing) {
         for (let x = 0; x < width; x += spacing) {
             let d = dist(mouseX, mouseY, x, y);
-            let ellipseSize = map(d, 0, maxDist, 50, -50);
+            let ellipseSize = map(d, 0, maxDist, 70, -50);
             ellipse(x, y, ellipseSize, ellipseSize);
         }
     }

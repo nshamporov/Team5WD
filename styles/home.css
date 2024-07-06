@@ -56,16 +56,16 @@ main {
     margin-bottom: 10vh;
 }
 
-.buy-tickets {
+#buy-tickets {
     background-color: rgb(60, 107, 236);
-    color: aliceblue;
+    color: white;
     padding: 1rem;
     border-radius: 1em;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
 
-.buy-tickets:hover {
+#buy-tickets:hover {
     background-color: rgb(35, 65, 148);
     color: #bbc3c3;
 }
@@ -157,9 +157,9 @@ main {
     margin-bottom: 10vh;
 }
 
-.see-more {
+#see-more {
     background-color: rgb(60, 107, 236);
-    color: aliceblue;
+    color: white;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 0.5rem;
@@ -170,7 +170,7 @@ main {
     transition: all 0.3s ease-in-out;
 }
 
-.see-more:hover {
+#see-more:hover {
     background-color: rgb(35, 65, 148);
     color: #bbc3c3;
 }

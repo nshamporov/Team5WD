@@ -54,10 +54,9 @@ body {
 }
 
 .header-logo {
-    width: 100%;
-    height: 100vh;
-    max-width:30vw;
-    max-height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    height: 8rem;
 }
 
 .signflow-logo {
@@ -67,14 +66,33 @@ body {
     justify-content: center;
 }
 
-.account-icon {
-    border-radius: 100%;
-    background-color: rgb(255, 217, 217); /* SECONDARY LIGHT */
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5em;
-    height: 9em;
+.account-buttons{
+    display: flex;
+}
+
+.account-buttons a{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.account-buttons a:hover{
+    background-color: rgb(226, 93, 93);
+    transition: all 0.3s ease-in;
+}
+
+.login {
+    background-color: rgb(255, 105, 105);
+    padding: 0.7rem  3rem;
+    border-radius: 2rem;
+    position: relative;
+    margin-right: -2.2vw;
+}
+
+.signup {
+    margin-right: 1vw;
+    background-color: rgb(255, 217, 217);
+    padding: 0.7rem 3rem;
+    border-radius: 2rem;
 }
 
 .subnav {
@@ -96,7 +114,7 @@ body {
     border-bottom: 0.05em solid rgb(255, 105, 105); /* SECONDARY DARK */
     border-top: 0;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     list-style-type: none;
     background-color: rgb(255, 245, 225); /* PRIMARY */
 }
@@ -119,7 +137,7 @@ body {
 }
 
 #current-page:hover {
-    background-color: rgb(255, 217, 217); /* SECONDARY LIGHT */
+    background-color: rgb(226, 93, 93); /* SECONDARY LIGHT */
     transition: all 0.5s ease-in;
 }
 
@@ -140,13 +158,6 @@ body {
     position: relative;
     height: 100vh;
 }
-
-/* .background-image img {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-     
-} */
 
  /* Footer */
 
@@ -175,7 +186,7 @@ footer h4 {
 }
 
 .quickLinks a:hover{
-    color: rgb(255, 217, 217); /* SECONDARY LIGHT */
+    color: rgb(204, 171, 171); /* SECONDARY LIGHT */
 }
 
 .social-media ul {
@@ -189,7 +200,7 @@ footer h4 {
 }   
 
 .social-media a:hover {
-    color: rgb(255, 217, 217); /* SECONDARY LIGHT */
+    color: rgb(204, 171, 171); /* SECONDARY LIGHT */
 }
 
 .news-email input{
@@ -208,9 +219,10 @@ footer h4 {
     padding: 0.4em 1em;
     border-radius: 3em;
     margin-left: 2.5vw;
-    background-color: rgb(255, 217, 217); /* SECONDARY LIGHT */
+    background-color: rgb(204, 168, 168); /* SECONDARY LIGHT */
     transition: all 0.3s ease-in-out;
     border-color: transparent;
+    color: #000;
 }
 
 .news button:hover {
@@ -228,8 +240,8 @@ footer h4 {
 .footer-logo {
     width: 100%;
     height: 100%;
-    max-width: 20vw;
-    max-height: 30vh;
+    max-width: 15vw;
+    max-height: 20vh;
 }
 
 .branding {

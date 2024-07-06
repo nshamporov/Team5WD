@@ -12,17 +12,14 @@
     <nav class="p-5 border-b border-secondary-200">
       <div class="flex items-center justify-between">
         <div>
-          <img src="/assets/images/logo.png" alt="Logo" class="mx-auto h-32">
+          <a href="../../index.html"><img src="/assets/images/logo.png" alt="Logo" class="mx-auto h-32"></a>
         </div>
         <div>
           <!-- Account Icon -->
-          <div
-            class="size-32 rounded-full bg-secondary-100 grid place-items-center"
-          >
-            <div>
-					<a href="../auth/login.html">Login</a>
-					<a href="../auth/signup.html">Register</a>
-				</div>
+          <div class="account-buttons">
+            <a href="/pages/auth/login.html" class="login">Login</a>
+            <a href="/pages/auth/signup.html" class="signup">Register</a>
+          </div>
           </div>
         </div>
       </div>
@@ -47,7 +44,7 @@
                 <span>Places to Stay</span>
             </a>
         </li>
-        <li class="hover:bg-secondary-100 transition ease-in-out">
+        <li class="hover:bg-secondary-100 transition ease-in-out"  id="current-page">
             <a href="../shop/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
                 <i data-lucide="shopping-bag"></i>
                 <span>Shop</span>
@@ -57,12 +54,6 @@
             <a href="../checkout/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
                 <i data-lucide="credit-card"></i>
                 <span>Checkout</span>
-            </a>
-        </li>
-        <li class="hover:bg-secondary-100 transition ease-in-out">
-            <a href="../cart/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
-                <i data-lucide="shopping-cart"></i>
-                <span>Cart</span>
             </a>
         </li>
     </ul>
@@ -620,11 +611,11 @@
 
       <section class="py-32 mt-20 flex flex-col justify-center items-center bg-secondary-100">
         <h4 class="font-semibold text-4xl">Ready to checkout?</h4>
-        <button
-          class="mt-5 bg-secondary-200 p-4 min-w-64 text-lg text-white transition-colors ease-in-out rounded"
+        <a
+          id="ready-to-checkout" href="../checkout/index.html"
         >
-          Continue to cart
-        </button>
+          Continue to checkout
+      </a>
       </section>
     </main>
     <footer>
@@ -636,7 +627,7 @@
           <li><a href="/pages/attractions/index.html">Rides & Attractions</a></li>
           <li><a href="/pages/accommodation/index.html">Places to Stay</a></li>
           <li><a href="/pages/shop/index.html">Shop</a></li>
-          <li><a href="/pages/cart/index.html">Cart</a></li>
+          <li><a href="/pages/checkout/index.html">Checkout</a></li>
         </ul>
       </section>
       <section class="news">
