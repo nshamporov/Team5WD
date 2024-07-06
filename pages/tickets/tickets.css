@@ -1,14 +1,8 @@
-html {
-    scroll-behavior: smooth;
-}
-
 main {
     padding-bottom: 20vh;
 }
 
-
-                                                                        /* Special Deal Section */
-
+                                                            /* Special Deal Section */
 
 .SpecialDeal-title {
     justify-content: center;
@@ -50,9 +44,7 @@ main {
     border: 0.1rem solid black;
 }
 
-
-                                                                                /* Tickets Navigation */
-
+                                                            /* Tickets Navigation */
 
 .ticket-nav {
     margin-top: 30vh;
@@ -101,9 +93,7 @@ main {
     background: linear-gradient(to right, rgb(0, 200, 255), rgb(0, 200, 255), rgb(25, 0, 255), rgb(25, 0, 255));
 }
 
-
-                                                                        /* Annual Passes section */
-
+                                                            /* Annual Passes section */
 
 .Annualpasses-title {
     justify-content: center;
@@ -149,6 +139,8 @@ main {
     color: #bbc3c3;
 }
 
+                                    /* Saver Pass styling */
+
 .Saver-Pass {
     border: 2px solid black;
     width: 100%;
@@ -175,6 +167,8 @@ main {
     text-align: start;
 }
 
+                                    /* Normal Pass styling */
+
 .Normal-pass {
     border: 2px solid black;
     width: 100%;
@@ -200,6 +194,8 @@ main {
     padding-left: 2rem;
     text-align: start;
 }
+
+                                    /* Premium Pass styling */
 
 .Premium-pass {
     border: 2px solid black;
@@ -235,9 +231,7 @@ main {
     background: linear-gradient(to right, rgb(25, 0, 255), rgb(25, 0, 255), rgb(0, 255, 115), rgb(0, 255, 115));
 }
 
-
-                                                                            /* Day Ticket Deals section */
-
+                                                            /* Day Ticket Deals section */
 
 .DayTicket-title {
     justify-content: center;
@@ -283,6 +277,8 @@ main {
     color: #bbc3c3;
 }
 
+                                    /* Saver Ticket styling */
+
 .Saver-Ticket {
     border: 2px solid black;
     width: 100%;
@@ -309,6 +305,8 @@ main {
     text-align: start;
 }
 
+                                    /* Normal Ticket Styling */
+
 .Normal-Ticket {
     border: 2px solid black;
     width: 100%;
@@ -334,6 +332,8 @@ main {
     padding-left: 2rem;
     text-align: start;
 }
+
+                                    /* Premium Ticket styling */
 
 .Premium-Ticket {
     border: 2px solid black;
@@ -369,9 +369,7 @@ main {
     background: linear-gradient(to right, rgb(0, 255, 123), rgb(0, 255, 123), rgb(255, 166, 0), rgb(255, 166, 0));
 }
 
-
-                                                                            /* Food Promotions section */
-
+                                                            /* Food Promotions section */
 
 .FoodPromo-title {
     justify-content: center;
@@ -417,6 +415,8 @@ main {
     color: #bbc3c3;
 }
 
+                                    /* Half Price Promotion styling */
+
 .HalfPrice {
     border: 2px solid black;
     width: 100%;
@@ -453,6 +453,8 @@ main {
     text-align: center;
 }
 
+                                    /* Free Food Promotion styling */
+
 .FreeFood h3 {
     text-align: center;
     font-size: 1.3em;
@@ -477,9 +479,7 @@ main {
     background: linear-gradient(to right, rgb(255, 166, 0), rgb(255, 166, 0), rgb(174, 77, 9), rgb(174, 77, 9));
 }
 
-
-                                                                    /* Wildlife Encounter section */
-
+                                                            /* Wildlife Encounter section */
 
 .WildlifeEncounter-title {
     justify-content: center;
@@ -525,6 +525,8 @@ main {
     color: #bbc3c3;
 }
 
+                                    /* Wildlife Tour styling */
+
 .Tour {
     border: 2px solid black;
     width: 100%;
@@ -550,6 +552,8 @@ main {
     padding-left: 2rem;
     text-align: start;
 }
+
+                                    /* Animal Feeding styling */
 
 .Feeding {
     border: 2px solid black;

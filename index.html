@@ -1,142 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <title>Dreamland Adventures</title>
-    <script src="/scripts/index.js"></script>
-</head>
-<body>
-    <header>
-        <!-- Top Nav -->
-        <div class="topnav">
-            <a href="#" class="logo"><img src="/assets/images/logo.png" alt="logo" class="header-logo"></a>
-            <!-- Account Icon -->
-            <div class="account-buttons">
-                <a href="/pages/auth/login.html" class="login">Login</a>
-                <a href="/pages/auth/signup.html" class="signup">Register</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/home.css">
+        <title>Dreamland Adventures</title>
+        <script src="/scripts/index.js"></script>
+    </head>
+    <body>
+        <header>
+            <!-- Top Nav -->
+            <div class="topnav">
+                <a href="#" class="logo"><img src="/assets/images/logo.png" alt="logo" class="header-logo"></a>
+                <div class="account-buttons">
+                    <a href="/pages/auth/login.html" class="login">Login</a>
+                    <a href="/pages/auth/signup.html" class="signup">Register</a>
+                </div>
             </div>
-        </div>
-        <!-- Sub Nav -->
-        <div class="subnav" style="background-image: url('/assets/images/HomePageBackground3.jpg');">
-            <ul>
-                <li>
-                    <a href="/pages/tickets/index.html">
-                        <i data-lucide="tag"></i>
-                        <span>Tickets</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/pages/attractions/index.html">
-                        <i data-lucide="roller-coaster"></i>
-                        <span>Rides & Attractions</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/pages/accommodation/index.html">
-                        <i data-lucide="bed-double"></i>
-                        <span>Places to Stay</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/pages/shop/index.html">
-                        <i data-lucide="shopping-bag"></i>
-                        <span>Shop</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/pages/checkout/index.html">
-                        <i data-lucide="credit-card"></i>
-                        <span>Checkout</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <section class="whatsNew">
-            <h2 class="WhatsNewTitle">What's New</h2>
-            <div class="Carnival">
-                <img src="./assets/images/CarnivalBanner.jpg" alt="Carnival Banner" class="CarnivalBanner">
-                <article class="carnival-description">
-                    <h3 class="carnival-title">🎉 Welcome to the Carnival Extravaganza! 🎉</h3>
-                    <p class="carnival-text">Step right up to the most exciting carnival event of the year at our Theme Park! From thrilling rides and fun games to delicious treats and spectacular shows, there's something for everyone to enjoy. Whether you're here for the jaw-dropping roller coasters, the classic carnival games, or the mouth-watering snacks, our carnival promises endless fun and excitement for the whole family. <br><br>Join us for an unforgettable adventure filled with laughter, joy, and magical moments. Let the festivities begin! 🎠🎟️🎢</p>
-                    <a href="/pages/tickets/index.html" class="buy-tickets"  id="buy-tickets">Buy Tickets Now!</a>
-                </article>
+            <!-- Sub Nav -->
+            <div class="subnav" style="background-image: url('/assets/images/HomePageBackground3.jpg');">
+                <ul>
+                    <li>
+                        <a href="/pages/tickets/index.html">
+                            <i data-lucide="tag"></i>
+                            <span>Tickets</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/attractions/index.html">
+                            <i data-lucide="roller-coaster"></i>
+                            <span>Rides & Attractions</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/accommodation/index.html">
+                            <i data-lucide="bed-double"></i>
+                            <span>Places to Stay</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/shop/index.html">
+                            <i data-lucide="shopping-bag"></i>
+                            <span>Shop</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/checkout/index.html">
+                            <i data-lucide="credit-card"></i>
+                            <span>Checkout</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="WaterPark">
-                <article class="WaterPark-description">
-                    <h3 class="WaterPark-title">🌊 Welcome to the Ultimate Water Park! 🌊</h3>
-                    <p class="WaterPark-text">Dive into a world of splashes and thrills at our Theme Park's Water Park! Whether you're seeking the adrenaline rush of our towering water slides, the relaxing flow of our lazy river, or the fun-filled play zones for the little ones, there's something for everyone to enjoy. <br><br>Join us for a day of sun-soaked fun, where you can cool off in our wave pools, float in the crystal-clear waters, and indulge in delicious treats from our beachside cafes. Make unforgettable memories with family and friends as you explore our water wonderland. <br><br>Get ready for a splash-tastic adventure like no other! 🌞💦🏄‍♂️</p>
-                    <a href="/pages/tickets/index.html" class="buy-tickets" id="buy-tickets">Buy Tickets Now!</a>
-                </article>
-                <img src="./assets/images/WaterParkBanner.jpg" alt="WaterPark Banner" class="WaterParkBanner">
-            </div>
-        </section>
-        <section class="promotions">
-            <h2 class="PromotionsTitle">Promotions</h2>
-            <div class="ImageAndText">
-                <img src="./assets/images/dropoff.jpg" alt="Drop Off Promotion" class="top-image">
-                <article class="promotions-description">
-                    <h3 class="promotions-title">🎉 Exciting Promotions at Theme Park! 🎉</h3>
-                    <p class="promotions-text">Don't miss out on the best deals and special offers at our Theme Park! Whether you're planning a family outing, a group adventure, or a solo escape, we've got promotions that make your visit even more amazing. Enjoy special discounts, early bird savings, and exclusive packages designed to give you the most fun at the best value. <br><br>Hurry, these deals won't last long! Make your visit unforgettable and affordable with our fantastic promotions.</p>
-                    <a href="/pages/tickets/index.html" class="see-more" id="see-more">See More</a>
-                </article>
-            </div>
-            <div class="bottom-images">
-                <img src="./assets/images/buy1get1free.jpg" alt="Buy 1 get 1 Free" class="bottom-left-image">
-                <img src="./assets/images/save60$.png" alt="Save up to 60$" class="bottom-right-image">
-            </div>
-        </section>
-    </main>
-    <footer>
-        <section class="quickLinks">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="/pages/tickets/index.html">Tickets</a></li>
-                <li><a href="/pages/attractions/index.html">Rides &amp; Attractions</a></li>
-                <li><a href="/pages/accommodation/index.html">Places to Stay</a></li>
-                <li><a href="/pages/shop/index.html">Shop</a></li>
-                <li><a href="/pages/checkout/index.html">Checkout</a></li>
-            </ul>
-        </section>
-        <section class="news">
-            <h4>Newsletter</h4>
-            <form action="newsmail" class="news-email">
-                <input type="email" name="email" placeholder="Enter your email" id="email-box">
-                <button type="submit" id="subscribe">Subscribe</button>
-            </form>
-        </section>
-        <section class="social-media">
-            <h4>Follow Us</h4>
-            <ul>
-                <li><a href="https://facebook.com/themepark" target="_blank">Facebook</a></li>
-                <li><a href="https://twitter.com/themepark" target="_blank">Twitter</a></li>
-                <li><a href="https://instagram.com/themepark" target="_blank">Instagram</a></li>
-                <li><a href="https://youtube.com/themepark" target="_blank">YouTube</a></li>
-            </ul>
-        </section>
-        <section class="contactUs">
-            <h4>Contact Us</h4>
-            <p class="address">123 Theme Park Ave,<br>Fun City, CA 12345</p>
-            <p class="phoneNum">Phone: (123) 456-7890</p>
-            <p class="email">Email: info@themepark.com</p>
-            <p class="hours">Hours: Mon-Sun, 9am - 10pm</p>
-        </section>
-        <section class="CopyRight">
-            <p>&copy; 2024 Theme Park. All rights reserved.</p>
-        </section>
-        <section class="branding">
-            <img src="/assets/images/logo.png" alt="Theme Park Logo" class="footer-logo">
-            <p>Making Dreams Come True Since 1999</p>
-        </section>
-    </footer>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        lucide.createIcons();
-    </script>
-</body>
+        </header>
+        <main>
+            <!-- Whats New Section -->
+            <section class="whatsNew">
+                <h2 class="WhatsNewTitle">What's New</h2>
+                <!-- Carnival Division -->
+                <div class="Carnival">
+                    <img src="./assets/images/CarnivalBanner.jpg" alt="Carnival Banner" class="CarnivalBanner">
+                    <article class="carnival-description">
+                        <h3 class="carnival-title">🎉 Welcome to the Carnival Extravaganza! 🎉</h3>
+                        <p class="carnival-text">Step right up to the most exciting carnival event of the year at Dreamland Adventures! From thrilling rides and fun games to delicious treats and spectacular shows, there's something for everyone to enjoy. Whether you're here for the jaw-dropping roller coasters, the classic carnival games, or the mouth-watering snacks, our carnival promises endless fun and excitement for the whole family. <br><br>🎠 Join us for an unforgettable adventure filled with laughter, joy, and magical moments. Let the festivities begin! 🎟️</p>
+                        <a href="/pages/tickets/index.html" class="buy-tickets"  id="buy-tickets">Buy Tickets Now!</a>
+                    </article>
+                </div>
+                <!-- Water Park Division -->
+                <div class="WaterPark">
+                    <article class="WaterPark-description">
+                        <h3 class="WaterPark-title">🌊 Welcome to the Ultimate Water Park! 🌊</h3>
+                        <p class="WaterPark-text">Dive into a world of splashes and thrills at Dreamland Adventures's Water Park! Whether you're seeking the adrenaline rush of our towering water slides, the relaxing flow of our lazy river, or the fun-filled play zones for the little ones, there's something for everyone to enjoy. <br><br>Join us for a day of sun-soaked fun, where you can cool off in our wave pools, float in the crystal-clear waters, and indulge in delicious treats from our beachside cafes. Make unforgettable memories with family and friends as you explore our water wonderland. <br><br>Get ready for a splash-tastic adventure like no other! 🌞💦🏄‍♂️</p>
+                        <a href="/pages/tickets/index.html" class="buy-tickets" id="buy-tickets">Buy Tickets Now!</a>
+                    </article>
+                    <img src="./assets/images/WaterParkBanner.jpg" alt="WaterPark Banner" class="WaterParkBanner">
+                </div>
+            </section>
+            <!-- Promotions Section -->
+            <section class="promotions">
+                <h2 class="PromotionsTitle">Promotions</h2>
+                <!-- The upper part of Promotions section containing image and a text -->
+                <div class="ImageAndText">
+                    <img src="./assets/images/dropoff.jpg" alt="Drop Off Promotion" class="top-image">
+                    <article class="promotions-description">
+                        <h3 class="promotions-title">🎉 Exciting Promotions at Theme Park! 🎉</h3>
+                        <p class="promotions-text">Don't miss out on the best deals and special offers at Dreamland Adventures! Whether you're planning a family outing, a group adventure, or a solo escape, we've got promotions that make your visit even more amazing. Enjoy special discounts, early bird savings, and exclusive packages designed to give you the most fun at the best value. <br><br>Hurry, these deals won't last long! Make your visit unforgettable and affordable with our fantastic promotions.</p>
+                        <a href="/pages/tickets/index.html" class="see-more" id="see-more">See More</a>
+                    </article>
+                </div>
+                <!-- The lower part of the Promotions section containing two images -->
+                <div class="bottom-images">
+                    <img src="./assets/images/buy1get1free.jpg" alt="Buy 1 get 1 Free" class="bottom-left-image">
+                    <img src="./assets/images/save60$.png" alt="Save up to 60$" class="bottom-right-image">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <!-- Quick Links to any of the pages on the website -->
+            <section class="quickLinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/pages/tickets/index.html">Tickets</a></li>
+                    <li><a href="/pages/attractions/index.html">Rides &amp; Attractions</a></li>
+                    <li><a href="/pages/accommodation/index.html">Places to Stay</a></li>
+                    <li><a href="/pages/shop/index.html">Shop</a></li>
+                    <li><a href="/pages/checkout/index.html">Checkout</a></li>
+                </ul>
+            </section>
+            <!-- News Subscription (asks user for an email and if email has been entered then the thank you for subscribing window pops up) -->
+            <section class="news">
+                <h4>Newsletter</h4>
+                <form action="newsmail" class="news-email">
+                    <input type="email" name="email" placeholder="Enter your email" id="email-box">
+                    <button type="submit" id="subscribe">Subscribe</button>
+                </form>
+            </section>
+            <!-- Links to website's social media (none of the accounts really exist) -->
+            <section class="social-media">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://facebook.com/themepark" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/themepark" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com/themepark" target="_blank">Instagram</a></li>
+                    <li><a href="https://youtube.com/themepark" target="_blank">YouTube</a></li>
+                </ul>
+            </section>
+            <!-- Theme Park's address section -->
+            <section class="contactUs">
+                <h4>Contact Us</h4>
+                <p class="address">123 Theme Park Ave,<br>Fun City, CA 12345</p>
+                <p class="phoneNum">Phone: (123) 456-7890</p>
+                <p class="email">Email: info@themepark.com</p>
+                <p class="hours">Hours: Mon-Sun, 9am - 10pm</p>
+            </section>
+            <!-- CopyRight Section  -->
+            <section class="CopyRight">
+                <p>&copy; 2024 Theme Park. All rights reserved.</p>
+            </section>
+            <!-- Footer Logo Section -->
+            <section class="branding">
+                <img src="/assets/images/logo.png" alt="Theme Park Logo" class="footer-logo">
+                <p>Making Dreams Come True Since 1999</p>
+            </section>
+        </footer>
+        <!-- Script for the icons in the topnav -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script>
+            lucide.createIcons();
+        </script>
+    </body>
 </html>

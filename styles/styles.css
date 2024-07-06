@@ -1,3 +1,8 @@
+
+                                            /* This file styles Navigation bars and Footer */
+
+/* Some universal tags styling */
+
 * {
     margin: 0;
     padding: 0;
@@ -39,16 +44,17 @@ body {
     margin: 0;
     padding: 0;
     line-height: inherit;
-	background-color: rgb(255, 245, 225); /* PRIMARY */
+	background-color: rgb(255, 245, 225);
 }
 
-/* Header */
-        
-                                                                    
+                                                            /* Header */
+
+                                    /* Primary Navigation bar */
+
 .topnav {
     display: flex;
     padding: 0.7em;
-    border-bottom: 0.05em solid rgb(255, 105, 105); /* SECONDARY DARK */
+    border-bottom: 0.05em solid rgb(255, 105, 105);
     justify-content: space-between;
     align-items: center;
 }
@@ -95,6 +101,8 @@ body {
     border-radius: 2rem;
 }
 
+                                    /* Secondary Navigation bar */
+
 .subnav {
     background-color: transparent; 
     width: 100%;
@@ -111,33 +119,33 @@ body {
     max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 0.05em solid rgb(255, 105, 105); /* SECONDARY DARK */
+    border-bottom: 0.05em solid rgb(255, 105, 105); 
     border-top: 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     list-style-type: none;
-    background-color: rgb(255, 245, 225); /* PRIMARY */
+    background-color: rgb(255, 245, 225); 
 }
 
 .subnav li{
-    border-left: 0.05em solid rgb(255, 105, 105); /* SECONDARY DARK */
+    border-left: 0.05em solid rgb(255, 105, 105);
 }
 
 .subnav li:nth-last-child(1){
-    border-right: 0.15em solid rgb(255, 105, 105); /* SECONDARY DARK */
+    border-right: 0.15em solid rgb(255, 105, 105);
 }
 
 .subnav li:hover{
-    background-color: rgb(255, 105, 105); /* SECONDARY DARK */
+    background-color: rgb(255, 105, 105);
     transition: all 0.5s ease-in;
 }
 
 #current-page {
-    background-color: rgb(255, 105, 105); /* SECONDARY DARK */
+    background-color: rgb(255, 105, 105); 
 }
 
 #current-page:hover {
-    background-color: rgb(226, 93, 93); /* SECONDARY LIGHT */
+    background-color: rgb(226, 93, 93);
     transition: all 0.5s ease-in;
 }
 
@@ -159,12 +167,12 @@ body {
     height: 100vh;
 }
 
- /* Footer */
+                                                            /* Footer */
 
 footer {
     padding: 1.25rem;
-    background-color: rgb(255, 105, 105); /* SECONDARY DARK */
-    color: rgb(255, 245, 225); /* PRIMARY */
+    background-color: rgb(255, 105, 105); 
+    color: rgb(255, 245, 225); 
     text-align: center; 
     display: flex;
     justify-content: space-around;
@@ -175,40 +183,46 @@ footer h4 {
     color: #000;
 }
 
+                                    /* Quick Links Styling */
+
 .quickLinks ul {
     list-style-type: none;
 }
 
 .quickLinks a{
     text-decoration: none;
-    color: rgb(255, 245, 225); /* PRIMARY */
+    color: rgb(255, 245, 225); 
     transition: all 0.3s ease-in-out;
 }
 
 .quickLinks a:hover{
-    color: rgb(204, 171, 171); /* SECONDARY LIGHT */
+    color: rgb(204, 171, 171);
 }
+
+                                    /* Social Media Links styling */
 
 .social-media ul {
     list-style-type: none;
 }
 
 .social-media a{
-    color: rgb(255, 245, 225); /* PRIMARY */
+    color: rgb(255, 245, 225); 
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }   
 
 .social-media a:hover {
-    color: rgb(204, 171, 171); /* SECONDARY LIGHT */
+    color: rgb(204, 171, 171); 
 }
+
+                                    /* News Subscription styling */
 
 .news-email input{
     width: 100%;
     padding: 0.5em 1em;
     margin-bottom: 2vh;
     margin-top: 2vh;
-    background-color: rgb(255, 245, 225); /* PRIMARY */
+    background-color: rgb(255, 245, 225); 
 }
 
 .news button{
@@ -219,16 +233,17 @@ footer h4 {
     padding: 0.4em 1em;
     border-radius: 3em;
     margin-left: 2.5vw;
-    background-color: rgb(204, 168, 168); /* SECONDARY LIGHT */
+    background-color: rgb(204, 168, 168); 
     transition: all 0.3s ease-in-out;
     border-color: transparent;
     color: #000;
 }
 
 .news button:hover {
-    background-color: rgb(255, 245, 225); /* PRIMARY */
+    background-color: rgb(255, 245, 225);
 }
 
+                                    /* CopyRight styling */
 
 .CopyRight {
     align-items: center;
@@ -236,6 +251,8 @@ footer h4 {
     justify-content: center;
     display: flex;
 }
+
+                                    /* Footer Logo styling */
 
 .footer-logo {
     width: 100%;
