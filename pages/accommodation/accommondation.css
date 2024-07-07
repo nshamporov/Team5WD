@@ -12,7 +12,7 @@ main {
     width: 100%;
     min-height: 100vh;
     position: relative;
-    padding-top: 15vh; /* To accommodate the header */
+    padding-top: 15vh;
 }
 
 /* Canvas for accommodations background */
@@ -22,7 +22,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Positioned behind other content */
+    z-index: -1;
 }
 
 /* Heading styling */
@@ -35,7 +35,7 @@ h2 {
     border: 0.2rem solid black;
     background-color: white;
 }
-  
+
 /* Hotel list styling */
 .list-of-hotels {
     display: grid;
@@ -114,14 +114,14 @@ h2 {
 /* Stars value styling */
 .stars p {
     font-size: 2rem;
-    color: gold; /* Color for stars */
+    color: gold;
 }
 
 /* Book now button styling */
 .book-now {
     width: 20%;
-    background-color: rgb(255, 105, 105); /* Secondary dark color */
-    color: rgb(255, 245, 225); /* Primary color */; 
+    background-color: rgb(255, 105, 105);
+    color: rgb(255, 245, 225); 
     padding: 1rem;
     border-radius: 1em;
     border: none;
@@ -137,5 +137,5 @@ h2 {
 /* Hover effect for book now button */
 .book-now:hover {
     background-color: rgb(255, 217, 217); /* Secondary light color */
-    color: rgb(255, 245, 225); /* Primary color */
+    color: rgb(255, 245, 225);
 }
