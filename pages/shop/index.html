@@ -1,35 +1,38 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dreamland Adventures Theme Park website">
-    <meta name="keywords" content="Dreamland Adventures, Theme Park">
-    <meta name="author" content="Nikita Shamporov, Yigit Akbulak, Joel Ekpenyong">
-    <title>Dreamland Adventures | Shop</title>
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Dreamland Adventures Theme Park website">
+	<meta name="keywords" content="Dreamland Adventures, Theme Park">
+	<meta name="author" content="Nikita Shamporov, Yigit Akbulak, Joel Ekpenyong">
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../../index.css" />
     <link rel="stylesheet" href="/styles/styles.css">
+    <!-- Page title -->
+    <title>Dreamland Adventures | Shop</title>
     <link rel="icon" href="/assets/images/logo.png">
     <script src="/scripts/index.js"></script>
   </head>
   <body>
-    <!-- Top Nav -->
+    <!-- Top Navigation Bar -->
     <nav class="p-5 border-b border-secondary-200">
       <div class="flex items-center justify-between">
         <div>
+          <!-- Logo with link to the homepage -->
           <a href="../../index.html"><img src="/assets/images/logo.png" alt="Logo" class="mx-auto h-32"></a>
         </div>
         <div>
-          <!-- Account Icon -->
+          <!-- Account buttons for login and registration -->
           <div class="account-buttons">
             <a href="/pages/auth/login.html" class="login">Login</a>
             <a href="/pages/auth/signup.html" class="signup">Register</a>
           </div>
-          </div>
         </div>
       </div>
     </nav>
-    <!-- Sub Nav -->
+    <!-- Sub Navigation Bar -->
     <ul class="w-full max-w-5xl mx-auto border border-t-0 border-secondary-200 grid grid-cols-6 divide-x divide-secondary-200">
         <li class="hover:bg-secondary-100 transition ease-in-out">
             <a href="../tickets/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
@@ -40,7 +43,7 @@
         <li class="hover:bg-secondary-100 transition ease-in-out">
             <a href="../attractions/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
                 <i data-lucide="roller-coaster"></i>
-                <span>Attractions</span>
+                <span>Rides & Attractions</span>
             </a>
         </li>
         <li class="hover:bg-secondary-100 transition ease-in-out">
@@ -49,7 +52,7 @@
                 <span>Places to Stay</span>
             </a>
         </li>
-        <li class="hover:bg-secondary-100 transition ease-in-out"  id="current-page">
+        <li class="hover:bg-secondary-100 transition ease-in-out" id="current-page">
             <a href="../shop/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
                 <i data-lucide="shopping-bag"></i>
                 <span>Shop</span>
@@ -63,8 +66,7 @@
         </li>
     </ul>
     <main class="p-4 md:p-8">
-      <!-- Your content goes here -->
-
+      <!-- Main content area -->
       <!-- Tickets Section -->
       <section class="mt-10">
         <h3 class="font-bold text-3xl mb-5">Tickets</h3>
@@ -85,18 +87,13 @@
                 Access to all rides and attractions for a full day.
               </p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 50</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
-
           <!-- Child Ticket -->
           <div class="border border-black grid grid-cols-1 rounded">
             <div class="h-80 overflow-hidden group">
@@ -113,18 +110,13 @@
                 Access to all rides and attractions for children under 12.
               </p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 30</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
-
           <!-- VIP Ticket -->
           <div class="border border-black grid grid-cols-1 rounded">
             <div class="h-80 overflow-hidden group">
@@ -142,20 +134,15 @@
                 areas.
               </p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 100</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
         </div>
       </section>
-
       <!-- Rides Section -->
       <section class="mt-10">
         <h3 class="font-bold text-3xl mb-5">Rides</h3>
@@ -176,18 +163,13 @@
                 Experience the thrill of our biggest roller coaster.
               </p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 10</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
-
           <!-- Ferris Wheel Ride -->
           <div class="border border-black grid grid-cols-1 rounded">
             <div class="h-80 overflow-hidden group">
@@ -202,18 +184,13 @@
               <p class="text-sm mt-1">Single Ride Pass</p>
               <p class="mt-2">Enjoy a scenic ride on the Ferris Wheel.</p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 8</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
-
           <!-- Bumper Cars -->
           <div class="border border-black grid grid-cols-1 rounded">
             <div class="h-80 overflow-hidden group">
@@ -230,18 +207,13 @@
                 Have fun crashing into your friends in our bumper cars arena.
               </p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 7</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
-
           <!-- Haunted House -->
           <div class="border border-black grid grid-cols-1 rounded">
             <div class="h-80 overflow-hidden group">
@@ -256,20 +228,15 @@
               <p class="text-sm mt-1">Single Entry Pass</p>
               <p class="mt-2">Get spooked in our haunted house.</p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 9</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
         </div>
       </section>
-
       <!-- Attractions Section -->
       <section class="mt-10">
         <h3 class="font-bold text-3xl mb-5">Attractions</h3>
@@ -288,18 +255,13 @@
               <p class="text-sm mt-1">Single Entry Pass</p>
               <p class="mt-2">Watch a thrilling 4D movie experience.</p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 12</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
-
           <!-- Water Show -->
           <div class="border border-black grid grid-cols-1 rounded">
             <div class="h-80 overflow-hidden group">
@@ -314,18 +276,13 @@
               <p class="text-sm mt-1">Single Show Pass</p>
               <p class="mt-2">Enjoy a spectacular water show.</p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 15</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
-
           <!-- Petting Zoo -->
           <div class="border border-black grid grid-cols-1 rounded">
             <div class="h-80 overflow-hidden group">
@@ -342,18 +299,13 @@
                 Interact with friendly animals at our petting zoo.
               </p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 5</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
-
           <!-- Mini Golf -->
           <div class="border border-black grid grid-cols-1 rounded">
             <div class="h-80 overflow-hidden group">
@@ -370,20 +322,15 @@
                 Play a round of mini golf with your friends and family.
               </p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 10</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
         </div>
       </section>
-
       <!-- Food Section -->
       <section class="mt-10">
         <h3 class="font-bold text-3xl mb-5">Food</h3>
@@ -404,18 +351,13 @@
                 Redeemable at any of our food courts for a special lunch combo.
               </p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 20</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
-
           <!-- Snack Combo -->
           <div class="border border-black grid grid-cols-1 rounded">
             <div class="h-80 overflow-hidden group">
@@ -430,18 +372,13 @@
               <p class="text-sm mt-1">Popcorn and Drink</p>
               <p class="mt-2">Enjoy a popcorn and drink combo.</p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 8</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
-
           <!-- Ice Cream -->
           <div class="border border-black grid grid-cols-1 rounded">
             <div class="h-80 overflow-hidden group">
@@ -456,18 +393,13 @@
               <p class="text-sm mt-1">Single Scoop</p>
               <p class="mt-2">Delicious single scoop of ice cream.</p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 4</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
-
           <!-- Pizza Slice -->
           <div class="border border-black grid grid-cols-1 rounded">
             <div class="h-80 overflow-hidden group">
@@ -482,20 +414,15 @@
               <p class="text-sm mt-1">Cheese or Pepperoni</p>
               <p class="mt-2">A slice of hot and cheesy pizza.</p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 6</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
         </div>
       </section>
-
       <!-- Other Section -->
       <section class="mt-10">
         <h3 class="font-bold text-3xl mb-5">Other</h3>
@@ -516,18 +443,13 @@
                 Rent a bike to explore the theme park at your own pace.
               </p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 15</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
-
           <!-- Locker Rental -->
           <div class="border border-black grid grid-cols-1 rounded">
             <div class="h-80 overflow-hidden group">
@@ -544,18 +466,13 @@
                 Secure your belongings with a locker rental for the day.
               </p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 5</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
-
           <!-- Souvenir Photo -->
           <div class="border border-black grid grid-cols-1 rounded">
             <div class="h-80 overflow-hidden group">
@@ -572,18 +489,13 @@
                 Take home a photo of your favorite theme park moment.
               </p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 12</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
-
           <!-- Stuffed Animal -->
           <div class="border border-black grid grid-cols-1 rounded">
             <div class="h-80 overflow-hidden group">
@@ -600,30 +512,26 @@
                 A cuddly stuffed animal of our theme park mascot.
               </p>
             </div>
-            <div
-              class="flex justify-between mt-4 items-center border-t border-black p-4 self-end"
-            >
+            <div class="flex justify-between mt-4 items-center border-t border-black p-4 self-end">
               <p>$ 18</p>
-              <button
-                class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded"
-              >
+              <button class="border border-black p-2 min-w-32 hover:bg-secondary-100 transition-colors ease-in-out rounded">
                 Select
               </button>
             </div>
           </div>
         </div>
       </section>
-
+      <!-- Ready to Checkout Section -->
       <section class="py-32 mt-20 flex flex-col justify-center items-center bg-secondary-100">
         <h4 class="font-semibold text-4xl">Ready to checkout?</h4>
-        <a
-          id="ready-to-checkout" href="../checkout/index.html"
-        >
+        <a id="ready-to-checkout" href="../checkout/index.html">
           Continue to checkout
-      </a>
+        </a>
       </section>
     </main>
+    <!-- Footer -->
     <footer>
+      <!-- Quick Links -->
       <section class="quickLinks">
         <h4>Quick Links</h4>
         <ul>
@@ -635,13 +543,15 @@
           <li><a href="/pages/checkout/index.html">Checkout</a></li>
         </ul>
       </section>
+      <!-- Newsletter Subscription -->
       <section class="news">
         <h4>Newsletter</h4>
-        <form action="" method="" class="news-email">
+        <form action="news-email" method="get" class="news-email">
           <input type="email" name="email" placeholder="Enter your email" id="email-box">
           <button type="submit" id="subscribe">Subscribe</button>
         </form>
       </section>
+      <!-- Social Media Links -->
       <section class="social-media">
         <h4>Follow Us</h4>
         <ul>
@@ -651,6 +561,7 @@
           <li><a href="https://youtube.com/themepark" target="_blank">YouTube</a></li>
         </ul>
       </section>
+      <!-- Contact Information -->
       <section class="contactUs">
         <h4>Contact Us</h4>
         <p class="address">123 Theme Park Ave,<br>Fun City, CA 12345</p>
@@ -658,14 +569,17 @@
         <p class="email">Email: info@themepark.com</p>
         <p class="hours">Hours: Mon-Sun, 9am - 10pm</p>
       </section>
+      <!-- Copyright Information -->
       <section class="CopyRight">
         <p>&copy; 2024 Theme Park. All rights reserved.</p>
       </section>
+      <!-- Footer Branding -->
       <section class="branding">
         <img src="/assets/images/logo.png" alt="Theme Park Logo" class="footer-logo">
         <p>Making Dreams Come True Since 1999</p>
       </section>
     </footer>
+    <!-- Icons Script -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();

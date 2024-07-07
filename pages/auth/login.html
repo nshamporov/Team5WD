@@ -7,27 +7,38 @@
     <meta name="keywords" content="Dreamland Adventures, Theme Park">
     <meta name="author" content="Nikita Shamporov, Yigit Akbulak, Joel Ekpenyong">
     <title>Dreamland Adventures | Login</title>
+    <!-- Link to the main stylesheet -->
     <link rel="stylesheet" href="../../index.css">
+    <!-- Link to the login page specific stylesheet -->
     <link rel="stylesheet" href="./css/login.css">
-	<link rel="stylesheet" href="./css/bubble.css">
-    <link rel="icon" href="/assets/images/logo.png">
+    <!-- Link to the bubble background system stylesheet -->
+    <link rel="stylesheet" href="./css/bubble.css">
+    <!-- Script for the login page functionality -->
     <script src="./js/login.js" defer></script>
-	<script src="./js/bubble.js" defer></script> <!-- Bubble background system -->
+    <!-- Script for the bubble background system -->
+    <script src="./js/bubble.js" defer></script> 
 </head>
 <body class="bg-primary flex items-center justify-center min-h-screen relative overflow-hidden">
     <div class="bg-white p-8 rounded-lg shadow-lg max-w-sm w-full z-10">
         <div class="text-center mb-6">
+            <!-- Logo with link to the homepage -->
             <a href="/index.html"><img src="/assets/images/logo.png" alt="Logo" class="mx-auto h-46"></a>
+            <!-- Title of the form -->
             <h2 id="form-title" class="text-xl font-semibold mt-4">Enter your email to continue</h2>
+            <!-- Subtitle with instructions -->
             <p class="text-gray-600 mt-2">You can log in to Dreamland Adventures with your DreamAdventurer account.</p>
         </div>
+        <!-- Login form -->
         <form id="login-form">
+            <!-- Email input field -->
             <div class="mb-4">
                 <input id="email-input" type="email" placeholder="Email" class="w-full p-3 border rounded-lg">
             </div>
+            <!-- Password input field (initially hidden) -->
             <div id="password-container" class="mb-4" style="display: none;">
                 <input id="password-input" type="password" placeholder="Password" class="w-full p-3 border rounded-lg">
             </div>
+            <!-- Continue button -->
             <a href="javascript:void(0);" id="continue-button" class="w-full bg-secondary-200 hover:bg-secondary-100 text-active p-3 rounded-lg">Continue</a>
         </form>
     </div>
