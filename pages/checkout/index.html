@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Dreamland Adventures Theme Park website">
+	<meta name="keywords" content="Dreamland Adventures, Theme Park">
+	<meta name="author" content="Nikita Shamporov, Yigit Akbulak, Joel Ekpenyong">
+    <!-- Link to the main stylesheet -->
     <link rel="stylesheet" href="../../index.css">
+    <!-- Link to additional styles -->
     <link rel="stylesheet" href="/styles/styles.css">
+    <!-- Title of the page -->
     <title>Dreamland Adventures | Checkout</title>
 </head>
 <body>
-    <!-- Top Nav -->
+    <!-- Top Navigation Bar -->
     <nav class="p-5 border-b border-secondary-200">
         <div class="flex items-center justify-between">
             <div>
+                <!-- Logo with link to the homepage -->
                 <a href="../../index.html"><img src="/assets/images/logo.png" alt="Logo" class="mx-auto h-32"></a>
             </div>
-        <div>
-                <!-- Account Icon -->
-            <div class="account-buttons">
-                <a href="/pages/auth/login.html" class="login">Login</a>
-                <a href="/pages/auth/signup.html" class="signup">Register</a>
-            </div>
+            <div>
+                <!-- Account buttons for login and registration -->
+                <div class="account-buttons">
+                    <a href="/pages/auth/login.html" class="login">Login</a>
+                    <a href="/pages/auth/signup.html" class="signup">Register</a>
+                </div>
             </div>
         </div>
     </nav>
-    <!-- Sub Nav -->
+    <!-- Sub Navigation Bar -->
     <ul class="w-full max-w-5xl mx-auto border border-t-0 border-secondary-200 grid grid-cols-6 divide-x divide-secondary-200">
+        <!-- Navigation links with icons and labels -->
         <li class="hover:bg-secondary-100 transition ease-in-out">
             <a href="../tickets/index.html" class="p-4 h-full w-full text-center flex items-center gap-2 justify-center">
                 <i data-lucide="tag"></i>
@@ -59,7 +68,9 @@
 
     <main class="p-4 md:p-8">
         <div class="grid md:grid-cols-12 gap-10 mt-10">
+            <!-- Main content section for order details -->
             <section class="col-span-12 md:col-span-8">
+                <!-- Item details for checkout with quantity adjustment -->
                 <div class="grid grid-cols-3 items-center py-5 border-b border-secondary-200">
                     <div>
                         <p class="font-semibold">Child ticket</p>
@@ -74,6 +85,7 @@
                         <p class="font-semibold">$ 49.9</p>
                     </div>
                 </div>
+                <!-- Repeat for each item -->
                 <div class="grid grid-cols-3 items-center py-5 border-b border-secondary-200">
                     <div>
                         <p class="font-semibold">Rollercoaster ride</p>
@@ -117,6 +129,7 @@
                     </div>
                 </div>
             </section>
+            <!-- Sidebar for order summary -->
             <aside class="col-span-12 md:col-span-4 border border-secondary-200 rounded p-4 min-h-[400px]">
                 <h4 class="font-semibold text-3xl">Order Summary</h4>
                 <div class="grid grid-cols-2 mt-8">
@@ -127,12 +140,14 @@
                     <div class="border-t border-secondary-200 col-span-2 my-6"></div>
                     <p class="font-semibold text-xl">Total</p>
                     <p class="text-end">$ 199.6</p>
+                    <!-- Buttons for checkout and continue shopping -->
                     <button class="w-full bg-secondary-200 hover:bg-secondary-100 transition ease-in-out text-white py-3 rounded mt-4 col-span-2">Checkout</button>
                     <button class="w-full bg-secondary-200 hover:bg-secondary-100 transition ease-in-out text-white py-3 rounded mt-4 col-span-2">Continue Shopping</button>
                 </div>
             </aside>
         </div>
     </main>
+    <!-- Footer section -->
     <footer>
         <section class="quickLinks">
             <h4>Quick Links</h4>
@@ -145,13 +160,15 @@
                 <li><a href="/pages/checkout/index.html">Checkout</a></li>
             </ul>
         </section>
+        <!-- Newsletter subscription form -->
         <section class="news">
             <h4>Newsletter</h4>
-            <form action="" method="" class="news-email">
+            <form action="news-email" method="get" class="news-email">
                 <input type="email" name="email" placeholder="Enter your email" id="email-box">
                 <button type="submit" id="subscribe">Subscribe</button>
             </form>
         </section>
+        <!-- Social media links -->
         <section class="social-media">
             <h4>Follow Us</h4>
             <ul>
@@ -161,6 +178,7 @@
                 <li><a href="https://youtube.com/themepark" target="_blank">YouTube</a></li>
             </ul>
         </section>
+        <!-- Contact information -->
         <section class="contactUs">
             <h4>Contact Us</h4>
             <p class="address">123 Theme Park Ave,<br>Fun City, CA 12345</p>
@@ -168,6 +186,7 @@
             <p class="email">Email: info@themepark.com</p>
             <p class="hours">Hours: Mon-Sun, 9am - 10pm</p>
         </section>
+        <!-- Copyright and branding -->
         <section class="CopyRight">
             <p>&copy; 2024 Theme Park. All rights reserved.</p>
         </section>
@@ -176,6 +195,7 @@
             <p>Making Dreams Come True Since 1999</p>
         </section>
     </footer>
+    <!-- Script for icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();

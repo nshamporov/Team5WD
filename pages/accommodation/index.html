@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Meta tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Dreamland Adventures Theme Park website">
         <meta name="keywords" content="Dreamland Adventures, Theme Park">
         <meta name="author" content="Nikita Shamporov, Yigit Akbulak, Joel Ekpenyong">
+        
+        <!-- Page title -->
         <title>Dreamland Adventures | Accommodation</title>
+
+        <!-- Stylesheets for the main styles and accommodation page -->
         <link rel="stylesheet" href="/styles/styles.css">
         <link rel="stylesheet" href="accommondation.css">
+
+        <!-- Favicon for the page -->
         <link rel="icon" href="/assets/images/logo.png">
+
+        <!-- Scripts for functionality and P5.js library -->
         <script src="/scripts/index.js"></script>
         <script src="/scripts/p5.min.js"></script>
         <script src="accommodation.js"></script>
     </head>
     <body>
         <header>
-            <!-- Top Nav -->
+            <!-- Top Navigation Bar -->
             <nav class="topnav">
+                <!-- Logo with link to the homepage -->
                 <a href="/index.html" class="logo"><img src="/assets/images/logo.png" alt="logo" class="header-logo"></a>
+                <!-- Account buttons for login and registration -->
                 <div class="account-buttons">
                     <a href="/pages/auth/login.html" class="login">Login</a>
                     <a href="/pages/auth/signup.html" class="signup">Register</a>
                 </div>
             </nav>
-            <!-- Sub Nav -->
+            <!-- Sub Navigation Bar with background image -->
             <nav class="subnav" style="background-image: url('/assets/images/HomePageBackground5.jpg');">
                 <ul>
+                    <!-- Navigation links with icons and labels -->
                     <li>
                         <a href="../tickets/index.html">
                             <i data-lucide="tag"></i>
@@ -61,7 +73,9 @@
             </nav>
         </header>
         <main>
-            <div id="accommodationsCanvas"></div>   <!-- Canvas for Dynamic background -->
+            <!-- Canvas for Dynamic background -->
+            <div id="accommodationsCanvas"></div>   
+            <!-- Main heading -->
             <h2>Nearest hotels around us</h2>
             <!-- List of Hotels -->
             <ul class="list-of-hotels">
@@ -78,6 +92,7 @@
                             </div>
                         </article>
                     </section>
+                    <!-- Book Now button -->
                     <button class="book-now">Book Now</button>
                 </li>
                 <!-- Four Seasons Hotels and Resorts -->
@@ -93,6 +108,7 @@
                             </div>
                         </article>
                     </section>
+                    <!-- Book Now button -->
                     <button class="book-now">Book Now</button>
                 </li>
                 <!-- InterContinental Hotels Group -->
@@ -108,6 +124,7 @@
                             </div>
                         </article>
                     </section>
+                    <!-- Book Now button -->
                     <button class="book-now">Book Now</button>
                 </li>
                 <!-- Radisson Hotel Group -->
@@ -123,24 +140,25 @@
                             </div>
                         </article>
                     </section>
+                    <!-- Book Now button -->
                     <button class="book-now">Book Now</button>
                 </li>
             </ul>
         </main>
         <footer>
-            <!-- Quick Links to any of the pages on the website -->
+            <!-- Quick Links to various pages on the website -->
             <section class="quickLinks">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="/pages/tickets/index.html">Tickets</a></li>
-                    <li><a href="/pages/attractions/index.html">Rides &amp; Attractions</a></li>
+                    <li><a href="/pages/attractions/index.html">Rides & Attractions</a></li>
                     <li><a href="/pages/accommodation/index.html">Places to Stay</a></li>
                     <li><a href="/pages/shop/index.html">Shop</a></li>
                     <li><a href="/pages/checkout/index.html">Checkout</a></li>
                 </ul>
             </section>
-            <!-- News Subscription (asks user for an email and if email has been entered then the thank you for subscribing window pops up) -->
+            <!-- Newsletter subscription form -->
             <section class="news">
                 <h4>Newsletter</h4>
                 <form action="newsmail" class="news-email">
@@ -148,7 +166,7 @@
                     <button type="submit" id="subscribe">Subscribe</button>
                 </form>
             </section>
-            <!-- Links to website's social media (none of the accounts really exist) -->
+            <!-- Social media links -->
             <section class="social-media">
                 <h4>Follow Us</h4>
                 <ul>
@@ -158,7 +176,7 @@
                     <li><a href="https://youtube.com/themepark" target="_blank">YouTube</a></li>
                 </ul>
             </section>
-            <!-- Theme Park's address section -->
+            <!-- Contact information for the theme park -->
             <section class="contactUs">
                 <h4>Contact Us</h4>
                 <p class="address">123 Theme Park Ave,<br>Fun City, CA 12345</p>
@@ -166,17 +184,17 @@
                 <p class="email">Email: info@themepark.com</p>
                 <p class="hours">Hours: Mon-Sun, 9am - 10pm</p>
             </section>
-            <!-- CopyRight Section  -->
+            <!-- Copyright Section -->
             <section class="CopyRight">
                 <p>&copy; 2024 Theme Park. All rights reserved.</p>
             </section>
-            <!-- Footer Logo Section -->
+            <!-- Footer branding with logo -->
             <section class="branding">
                 <img src="/assets/images/logo.png" alt="Theme Park Logo" class="footer-logo">
                 <p>Making Dreams Come True Since 1999</p>
             </section>
         </footer>
-        <!-- Script for the icons in the topnav -->
+        <!-- Script for the icons in the top navigation -->
         <script src="https://unpkg.com/lucide@latest"></script>
         <script>
             lucide.createIcons();
