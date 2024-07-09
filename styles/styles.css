@@ -63,6 +63,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     height: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 8rem;
 }
 
 .signflow-logo {
@@ -72,6 +75,33 @@ body {
     justify-content: center;
 }
 
+.account-buttons{
+    display: flex;
+}
+
+.account-buttons a{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.account-buttons a:hover{
+    background-color: rgb(226, 93, 93);
+    transition: all 0.3s ease-in;
+}
+
+.login {
+    background-color: rgb(255, 105, 105);
+    padding: 0.7rem  3rem;
+    border-radius: 2rem;
+    position: relative;
+    margin-right: -2.2vw;
+}
+
+.signup {
+    margin-right: 1vw;
+    background-color: rgb(255, 217, 217);
+    padding: 0.7rem 3rem;
+    border-radius: 2rem;
 .account-buttons{
     display: flex;
 }
@@ -236,6 +266,7 @@ footer h4 {
     background-color: rgb(204, 168, 168); 
     transition: all 0.3s ease-in-out;
     border-color: transparent;
+    color: #000;
     color: #000;
 }
 
